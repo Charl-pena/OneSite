@@ -1,4 +1,7 @@
-[
+{
+  "ActualTitle": "Documentation",
+  "ActualSubtitle": "Everything you need to <strong>create a website</strong> with Bulma",
+  "Sections": [
     {
       "Href": "/documentation/overview/",
       "IconClass": "fas fa-eye",
@@ -30,4 +33,4 @@
       "Subtitle": "The power of <strong>Flexbox</strong> in a simple interface"
     }
   ]
-  
+}
