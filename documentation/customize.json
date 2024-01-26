@@ -1,0 +1,10 @@
+{
+  "Sections": [
+    {
+      "Href": "docu/customize/c",
+      "IconClass": "fas fa-eye",
+      "Title": "C",
+      "Subtitle": "Everything you need to create a website with Bulma"
+    }
+  ]
+}
