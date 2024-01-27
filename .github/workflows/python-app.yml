@@ -30,7 +30,7 @@ jobs:
         git checkout -b gh-pages
         git add documentation
         git commit -m "Actualizar documentación [skip ci]"
-        
-        # Configurar el token de acceso personal
-        git remote add origin_with_token "https://${{ github.actor }}:${{ secrets.ONESITE_TOKEN }}@github.com/${{ github.repository }}"
-        git push origin_with_token gh-pages
+        git push origin gh-pages
+    - uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.ONESITE_TOKEN }}
