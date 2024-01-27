@@ -30,9 +30,11 @@ jobs:
 
     - name: Subir carpeta 'documentation' a la rama 'gh-pages'
       run: |
-        git config --local user.email "actions@github.com"
-        git config --local user.name "GitHub Actions"
-        git pull origin gh-pages
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
+        git clone --branch gh-pages --single-branch https://github.com/${{ github.repository }}.git gh-pages    
+        cp -R documentation/* gh-pages/
+        cd gh-pages
         git add documentation
-        git commit -m "Actualizar documentación"
+        git commit -m "Actualización de la documentación"
         git push origin gh-pages
