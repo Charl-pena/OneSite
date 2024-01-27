@@ -22,3 +22,11 @@ jobs:
     - name: Ejecutar masterhand.py
       run: |
         python3 masterhand.py docu/ documentation/
+    - name: Subir carpeta 'documentation' a la rama 'gh-pages'
+      run: |
+        git config --global user.name "${{ github.actor }}"
+        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+        git checkout -b gh-pages
+        git add documentation
+        git commit -m "Actualizar documentación [skip ci]"
+        git push origin gh-pages
