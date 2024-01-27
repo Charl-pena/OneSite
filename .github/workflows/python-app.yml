@@ -32,4 +32,4 @@ jobs:
         ls
         git add -A documentation/
         git commit -m "Documentacion Actualizada"
-        git push
+        git push gh-pages
