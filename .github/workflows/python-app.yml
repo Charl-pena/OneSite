@@ -32,4 +32,4 @@ jobs:
         git checkout gh-pages
         git add documentation
         git commit -m "Actualizar documentación [skip ci]"
-        git push origin gh-pages
+        git push
