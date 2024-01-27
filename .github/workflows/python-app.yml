@@ -24,14 +24,13 @@ jobs:
     - name: Ejecutar masterhand.py
       run: |
         python3 masterhand.py docu/ documentation/
-        
-    - uses: actions/checkout@v4
+        mkdir wwwroot
+        mv documentation/ wwwroot/
+        touch wwwroot/index.html
+ 
+    - name: Commit wwwroot to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        ref: my-branch
-    - run: |
-        git config --global user.name 'Your Name'
-        git config --global user.email 'your-username@users.noreply.github.com'
-        git checkout origin/gh-pages
-        git add documentation/
-        git commit -m "Documentacion Actualizada"
-        git push
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: wwwroot/ 
