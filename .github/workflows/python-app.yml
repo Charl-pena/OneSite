@@ -29,7 +29,6 @@ jobs:
       run: |
         git config --global user.name 'Your Name'
         git config --global user.email 'your-username@users.noreply.github.com'
-        git switch gh-pages
-        git add -A documentation/
+        git add documentation/
         git commit -m "Documentacion Actualizada"
-        git push
+        git push --force origin gh-pages 
