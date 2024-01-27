@@ -1,7 +1,7 @@
 {
   "Sections": [
     {
-      "Href": "docu/columns/b",
+      "Href": "documentation/columns/articles/b",
       "IconClass": "fas fa-eye",
       "Title": "B",
       "Subtitle": "Everything you need to create a website with Bulma"

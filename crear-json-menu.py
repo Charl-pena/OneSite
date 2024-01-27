@@ -5,8 +5,12 @@ import json
 def clean_section_name(section_name):
     return section_name.replace("null53-", "")
 
-def generate_menu_json(root_path):
+def generate_menu_json(root_path, carpeta_a_crear):
     menu_sections = []
+
+    base_folder = carpeta_a_crear
+    if not carpeta_a_crear.endswith('/'):
+        base_folder  += '/'
 
     for section_name in os.listdir(root_path):
         section_path = os.path.join(root_path, section_name)
@@ -30,11 +34,11 @@ def generate_menu_json(root_path):
                                 if ".html" not in article_name:
                                     if os.path.isfile(article_path):
                                         article_title, article_extension = os.path.splitext(article_name)
-                                        article_href = f"/documentation/{item_name.lower()}/{submenu_name.lower()}/{article_title.lower()}/"
+                                        article_href = f"{base_folder}{item_name.lower()}/{submenu_name.lower()}/{article_title.lower()}/"
                                         article = {"Title": article_title.capitalize(), "Href": article_href}
                                         submenu_items.append(article)
 
-                    menu_item = {"Title": item_name.capitalize(), "Href": f"/documentation/{item_name.lower()}/", "SubMenus": submenu_items}
+                    menu_item = {"Title": item_name.capitalize(), "Href": f"{base_folder}{item_name.lower()}/", "SubMenus": submenu_items}
                     menu_section["MenuItems"].append(menu_item)
 
             menu_sections.append(menu_section)
@@ -51,20 +55,22 @@ def guardar_json_en_archivo(ruta_carpeta, result_json, file_name):
     print(f"JSON generado con éxito. Puedes encontrarlo en '{ruta_final}'.")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Uso: python crear-json-menu.py <ruta_de_tu_carpeta>")
+    if len(sys.argv) != 3:
+        print("Uso: python crear-json-menu.py <carpeta_a_trabajar> <carpeta_a_crear>")
         sys.exit(1)
 
-    ruta_de_tu_carpeta = sys.argv[1]
+    carpeta_a_trabajar = sys.argv[1]
+    carpeta_a_crear = sys.argv[2]
 
-    if not os.path.isdir(ruta_de_tu_carpeta):
-        print(f"La ruta proporcionada '{ruta_de_tu_carpeta}' no es una carpeta válida.")
+    if not os.path.isdir(carpeta_a_trabajar):
+        print(f"La ruta proporcionada '{carpeta_a_trabajar}' no es una carpeta válida.")
         sys.exit(1)
+
 
     name_json = "menu.json"
-    result_json = generate_menu_json(ruta_de_tu_carpeta)
+    result_json = generate_menu_json(carpeta_a_trabajar, carpeta_a_crear)
     if result_json:
         # Guardar el JSON en un archivo en la misma carpeta
-        guardar_json_en_archivo(ruta_de_tu_carpeta, result_json, name_json)
+        guardar_json_en_archivo(carpeta_a_trabajar, result_json, name_json)
     else:
         print("menu.json no se pudo generar, no hay informacion necesaria.")

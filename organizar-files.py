@@ -3,9 +3,9 @@ import sys
 import shutil
 from pathlib import Path
 
-def copiar_contenidos(original_base_folder, new_base_folder, folders_with_articles, original_folder_paths):
-    new_base_path      = Path(new_base_folder)
-    original_base_path = Path(original_base_folder)
+def copiar_contenidos(carpeta_a_trabajar, carpeta_a_crear, folders_with_articles, original_folder_paths):
+    new_base_path      = Path(carpeta_a_crear)
+    original_base_path = Path(carpeta_a_trabajar)
 
     for i in range(len(folders_with_articles)):
         shutil.copytree(original_folder_paths[i], new_base_path / folders_with_articles[i], ignore=shutil.ignore_patterns('*.html') )
@@ -42,23 +42,23 @@ def find_folders_with_articles(root_folder):
     return folders_with_articles, original_folder_paths
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Uso: python organizar-files.py <ruta_de_tu_carpeta>")
+    if len(sys.argv) != 3:
+        print("Uso: python organizar-files.py <carpeta_a_trabajar> <carpeta_a_crear>")
         sys.exit(1)
 
-    ruta_de_tu_carpeta = sys.argv[1]
+    carpeta_a_trabajar = sys.argv[1]
+    carpeta_a_crear = sys.argv[2]
 
-    if not os.path.isdir(ruta_de_tu_carpeta):
-        print(f"La ruta proporcionada '{ruta_de_tu_carpeta}' no es una carpeta válida.")
+    if not os.path.isdir(carpeta_a_trabajar):
+        print(f"La ruta proporcionada '{carpeta_a_trabajar}' no es una carpeta válida.")
         sys.exit(1)
 
 
-    folders_with_articles, original_folder_paths = find_folders_with_articles(ruta_de_tu_carpeta)
-    carpeta_base_nueva = "documentation"
+    folders_with_articles, original_folder_paths = find_folders_with_articles(carpeta_a_trabajar)
 
     if folders_with_articles and original_folder_paths:
-        if os.path.exists(carpeta_base_nueva):
-            shutil.rmtree(carpeta_base_nueva)
-        copiar_contenidos(ruta_de_tu_carpeta, carpeta_base_nueva, folders_with_articles, original_folder_paths)
+        if os.path.exists(carpeta_a_crear):
+            shutil.rmtree(carpeta_a_crear)
+        copiar_contenidos(carpeta_a_trabajar, carpeta_a_crear, folders_with_articles, original_folder_paths)
     else:
         print("No se encontraron carpetas con subcarpeta 'articles'.")
