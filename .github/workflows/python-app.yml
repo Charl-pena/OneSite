@@ -33,6 +33,7 @@ jobs:
         git config --global user.name "${{ github.actor }}"
         git config --global user.email "${{ github.actor }}@users.noreply.github.com"
         git checkout -b gh-pages
+        git pull origin gh-pages
         git add documentation
         git commit -m "Actualizar documentación [skip ci]"
         git push origin gh-pages
