@@ -1,0 +1,28 @@
+{
+  "Sections": [
+    {
+      "Href": "documentation/columns/articles/b",
+      "IconClass": "fas fa-eye",
+      "Title": "B",
+      "Subtitle": "Everything you need to create a website with Bulma"
+    },
+    {
+      "Href": "documentation/elements/articles/a",
+      "IconClass": "fas fa-eye",
+      "Title": "A",
+      "Subtitle": "Everything you need to create a website with Bulma"
+    },
+    {
+      "Href": "documentation/customize/articles/c",
+      "IconClass": "fas fa-eye",
+      "Title": "C",
+      "Subtitle": "Everything you need to create a website with Bulma"
+    },
+    {
+      "Href": "documentation/overview/articles/d",
+      "IconClass": "fas fa-eye",
+      "Title": "D",
+      "Subtitle": "Everything you need to create a website with Bulma"
+    }
+  ]
+}
