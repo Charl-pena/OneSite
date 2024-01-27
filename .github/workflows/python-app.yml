@@ -33,7 +33,7 @@ jobs:
         git config --global user.email "you@example.com"
         git config --global user.name "Your Name"
         git clone --branch gh-pages --single-branch https://github.com/${{ github.repository }}.git gh-pages    
-        cp -R documentation/* gh-pages/
+        mv documentation/ gh-pages/
         cd gh-pages
         git add documentation
         git commit -m "Actualización de la documentación"
