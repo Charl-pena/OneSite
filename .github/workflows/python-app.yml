@@ -29,4 +29,4 @@ jobs:
       with:
         commit_message: Documentation Actualizada
         branch: gh-pages
-        file_pattern: 'documentation'
+        file_pattern: 'documentation/'
