@@ -30,7 +30,8 @@ jobs:
 
     - name: Subir carpeta 'documentation' a la rama 'gh-pages'
       run: |
-        git config --global user.name "${{ github.actor }}"
-        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-        git checkout gh-pages
-
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add documentation
+        git commit -m "Actualizar documentación"
+        git subtree push --prefix documentation origin gh-pages
