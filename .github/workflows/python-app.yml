@@ -32,6 +32,7 @@ jobs:
       run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
+        git pull origin gh-pages
         git add documentation
         git commit -m "Actualizar documentación"
-        git subtree push --prefix documentation origin gh-pages
+        git push origin gh-pages
