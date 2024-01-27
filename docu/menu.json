@@ -1,0 +1,54 @@
+{
+  "MenuSections": [
+    {
+      "NameSection": "CSS Library",
+      "MenuItems": [
+        {
+          "Title": "Columns",
+          "Href": "documentation/columns/",
+          "SubMenus": [
+            {
+              "Title": "B",
+              "Href": "documentation/columns/articles/b/"
+            }
+          ]
+        },
+        {
+          "Title": "Elements",
+          "Href": "documentation/elements/",
+          "SubMenus": [
+            {
+              "Title": "A",
+              "Href": "documentation/elements/articles/a/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NameSection": "Guides",
+      "MenuItems": [
+        {
+          "Title": "Customize",
+          "Href": "documentation/customize/",
+          "SubMenus": [
+            {
+              "Title": "C",
+              "Href": "documentation/customize/articles/c/"
+            }
+          ]
+        },
+        {
+          "Title": "Overview",
+          "Href": "documentation/overview/",
+          "SubMenus": [
+            {
+              "Title": "D",
+              "Href": "documentation/overview/articles/d/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
