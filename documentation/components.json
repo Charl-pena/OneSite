@@ -1,13 +1,8 @@
 {
+  "IconClass": "fas fa-cubes",
   "ActualTitle": null,
   "ActualSubtitle": "Advanced multi-part components with lots of possibilities",
   "Sections": [
-    {
-      "Href": "documentation/components/articles/Breadcrumb",
-      "IconClass": null,
-      "Title": "Breadcrumb",
-      "Subtitle": "A simple breadcrumb component to improve your navigation experience"
-    },
     {
       "Href": "documentation/components/articles/breadcrumb",
       "IconClass": null,

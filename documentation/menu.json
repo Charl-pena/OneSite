@@ -6,6 +6,7 @@
         {
           "Title": "Overview",
           "Href": "documentation/overview/",
+          "IconClass": "fas fa-eye",
           "SubMenus": [
             {
               "Title": "Start",
@@ -16,6 +17,7 @@
         {
           "Title": "Customize",
           "Href": "documentation/customize/",
+          "IconClass": null,
           "SubMenus": [
             {
               "Title": "Concepts",
@@ -26,6 +28,7 @@
         {
           "Title": "Utilities",
           "Href": "documentation/utilities/",
+          "IconClass": null,
           "SubMenus": [
             {
               "Title": "Mixins",
@@ -41,6 +44,7 @@
         {
           "Title": "Columns",
           "Href": "documentation/columns/",
+          "IconClass": "fas fa-columns",
           "SubMenus": [
             {
               "Title": "Basics",
@@ -51,6 +55,7 @@
         {
           "Title": "Form",
           "Href": "documentation/form/",
+          "IconClass": "fab fa-wpforms",
           "SubMenus": [
             {
               "Title": "General",
@@ -61,6 +66,7 @@
         {
           "Title": "Layout",
           "Href": "documentation/layout/",
+          "IconClass": null,
           "SubMenus": [
             {
               "Title": "Container",
@@ -71,11 +77,8 @@
         {
           "Title": "Components",
           "Href": "documentation/components/",
+          "IconClass": "fas fa-cubes",
           "SubMenus": [
-            {
-              "Title": "Breadcrumb",
-              "Href": "documentation/components/articles/breadcrumb/"
-            },
             {
               "Title": "Breadcrumb",
               "Href": "documentation/components/articles/breadcrumb/"
@@ -85,6 +88,7 @@
         {
           "Title": "Helpers",
           "Href": "documentation/helpers/",
+          "IconClass": null,
           "SubMenus": [
             {
               "Title": "Color",
@@ -95,6 +99,7 @@
         {
           "Title": "Elements",
           "Href": "documentation/elements/",
+          "IconClass": "fas fa-cube",
           "SubMenus": [
             {
               "Title": "Block",
