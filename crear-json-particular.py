@@ -21,6 +21,7 @@ def procesar_archivo_html(ruta_html):
     # Verificar si existe el elemento 'title'
     if hasattr(soup, 'title') and soup.title:
         title = soup.title.text.strip()
+        title = title.capitalize()
     else:
         title = None  # Otra acción que desees realizar en caso de que no exista 'title'
 
