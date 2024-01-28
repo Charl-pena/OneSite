@@ -120,6 +120,7 @@ def guardar_json_en_archivo(ruta_carpeta, json_data):
 
     nombre_carpeta = os.path.basename(os.path.normpath(ruta_carpeta))
     nombre_archivo = f"{nombre_carpeta}.json"
+    nombre_archivo = nombre_archivo[0].lower() + nombre_archivo[1:]
     ruta_final = os.path.join(ruta_carpeta, nombre_archivo)
     
     if os.path.exists(ruta_final):

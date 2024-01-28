@@ -50,8 +50,10 @@ def procesar_archivo_html(ruta_html):
     # Convierte el diccionario a formato JSON
     json_result = json.dumps(result_dict, indent=2)
 
+    file_name_minuscula = os.path.basename(ruta_html).replace('.html', '.json')
+    file_name_minuscula = file_name_minuscula[0].lower() + file_name_minuscula[1:]
     # Construye la ruta completa al archivo JSON
-    ruta_json = os.path.join(os.path.dirname(ruta_html), os.path.basename(ruta_html).replace('.html', '.json'))
+    ruta_json = os.path.join(os.path.dirname(ruta_html), file_name_minuscula)
 
     # Escribe el resultado en un archivo JSON
     with open(ruta_json, 'w', encoding='utf-8') as json_file:
