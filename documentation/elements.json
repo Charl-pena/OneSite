@@ -1,10 +1,12 @@
 {
+  "ActualTitle": null,
+  "ActualSubtitle": "Essential interface elements that only require a single CSS class",
   "Sections": [
     {
-      "Href": "documentation/elements/articles/a",
-      "IconClass": "fas fa-eye",
-      "Title": "A",
-      "Subtitle": "Everything you need to create a website with Bulma"
+      "Href": "documentation/elements/articles/block",
+      "IconClass": null,
+      "Title": "Block",
+      "Subtitle": "Bulma's most basic spacer block"
     }
   ]
 }

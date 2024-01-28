@@ -1,0 +1,12 @@
+{
+  "ActualTitle": null,
+  "ActualSubtitle": null,
+  "Sections": [
+    {
+      "Href": "documentation/layout/articles/container",
+      "IconClass": null,
+      "Title": "Container",
+      "Subtitle": "A simple container to center your content horizontally"
+    }
+  ]
+}

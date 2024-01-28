@@ -8,8 +8,8 @@
           "Href": "documentation/overview/",
           "SubMenus": [
             {
-              "Title": "D",
-              "Href": "documentation/overview/articles/d/"
+              "Title": "Start",
+              "Href": "documentation/overview/articles/start/"
             }
           ]
         },
@@ -18,8 +18,18 @@
           "Href": "documentation/customize/",
           "SubMenus": [
             {
-              "Title": "C",
-              "Href": "documentation/customize/articles/c/"
+              "Title": "Concepts",
+              "Href": "documentation/customize/articles/concepts/"
+            }
+          ]
+        },
+        {
+          "Title": "Utilities",
+          "Href": "documentation/utilities/",
+          "SubMenus": [
+            {
+              "Title": "Mixins",
+              "Href": "documentation/utilities/articles/mixins/"
             }
           ]
         }
@@ -33,8 +43,48 @@
           "Href": "documentation/columns/",
           "SubMenus": [
             {
-              "Title": "B",
-              "Href": "documentation/columns/articles/b/"
+              "Title": "Basics",
+              "Href": "documentation/columns/articles/basics/"
+            }
+          ]
+        },
+        {
+          "Title": "Form",
+          "Href": "documentation/form/",
+          "SubMenus": [
+            {
+              "Title": "General",
+              "Href": "documentation/form/articles/general/"
+            }
+          ]
+        },
+        {
+          "Title": "Layout",
+          "Href": "documentation/layout/",
+          "SubMenus": [
+            {
+              "Title": "Container",
+              "Href": "documentation/layout/articles/container/"
+            }
+          ]
+        },
+        {
+          "Title": "Components",
+          "Href": "documentation/components/",
+          "SubMenus": [
+            {
+              "Title": "Breadcrumb",
+              "Href": "documentation/components/articles/breadcrumb/"
+            }
+          ]
+        },
+        {
+          "Title": "Helpers",
+          "Href": "documentation/helpers/",
+          "SubMenus": [
+            {
+              "Title": "Color",
+              "Href": "documentation/helpers/articles/color/"
             }
           ]
         },
@@ -43,8 +93,8 @@
           "Href": "documentation/elements/",
           "SubMenus": [
             {
-              "Title": "A",
-              "Href": "documentation/elements/articles/a/"
+              "Title": "Block",
+              "Href": "documentation/elements/articles/block/"
             }
           ]
         }

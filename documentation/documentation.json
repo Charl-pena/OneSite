@@ -1,28 +1,58 @@
 {
   "Sections": [
     {
-      "Href": "documentation/columns/articles/b",
-      "IconClass": "fas fa-eye",
-      "Title": "B",
-      "Subtitle": "Everything you need to create a website with Bulma"
+      "Href": "documentation/columns/articles/basics",
+      "IconClass": "",
+      "Title": "Basics",
+      "Subtitle": "A simple way to build responsive columns"
     },
     {
-      "Href": "documentation/overview/articles/d",
-      "IconClass": "fas fa-eye",
-      "Title": "D",
-      "Subtitle": "Everything you need to create a website with Bulma"
+      "Href": "documentation/form/articles/general",
+      "IconClass": null,
+      "Title": "General",
+      "Subtitle": "All generic form controls, designed for consistency"
     },
     {
-      "Href": "documentation/elements/articles/a",
-      "IconClass": "fas fa-eye",
-      "Title": "A",
-      "Subtitle": "Everything you need to create a website with Bulma"
+      "Href": "documentation/overview/articles/start",
+      "IconClass": null,
+      "Title": "Start",
+      "Subtitle": "You only need 1 CSS file to use Bulma"
     },
     {
-      "Href": "documentation/customize/articles/c",
+      "Href": "documentation/layout/articles/container",
+      "IconClass": null,
+      "Title": "Container",
+      "Subtitle": "A simple container to center your content horizontally"
+    },
+    {
+      "Href": "documentation/components/articles/Breadcrumb",
+      "IconClass": null,
+      "Title": "Breadcrumb",
+      "Subtitle": "A simple breadcrumb component to improve your navigation experience"
+    },
+    {
+      "Href": "documentation/helpers/articles/color",
+      "IconClass": null,
+      "Title": "Color",
+      "Subtitle": "Change the color of the text and/or background"
+    },
+    {
+      "Href": "documentation/elements/articles/block",
+      "IconClass": null,
+      "Title": "Block",
+      "Subtitle": "Bulma's most basic spacer block"
+    },
+    {
+      "Href": "documentation/customize/articles/concepts",
       "IconClass": "fas fa-eye",
-      "Title": "C",
-      "Subtitle": "Everything you need to create a website with Bulma"
+      "Title": "Concepts",
+      "Subtitle": "What makes Bulma customizable"
+    },
+    {
+      "Href": "documentation/utilities/articles/Mixins",
+      "IconClass": null,
+      "Title": "Mixins",
+      "Subtitle": "Utility mixins for custom elements and other CSS helpers"
     }
   ]
 }

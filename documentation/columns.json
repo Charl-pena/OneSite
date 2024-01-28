@@ -1,10 +1,12 @@
 {
+  "ActualTitle": null,
+  "ActualSubtitle": "The power of Flexbox in a simple interface",
   "Sections": [
     {
-      "Href": "documentation/columns/articles/b",
-      "IconClass": "fas fa-eye",
-      "Title": "B",
-      "Subtitle": "Everything you need to create a website with Bulma"
+      "Href": "documentation/columns/articles/basics",
+      "IconClass": "",
+      "Title": "Basics",
+      "Subtitle": "A simple way to build responsive columns"
     }
   ]
 }

@@ -1,10 +1,12 @@
 {
+  "ActualTitle": null,
+  "ActualSubtitle": "Create your own theme with a simple set of variables",
   "Sections": [
     {
-      "Href": "documentation/customize/articles/c",
+      "Href": "documentation/customize/articles/concepts",
       "IconClass": "fas fa-eye",
-      "Title": "C",
-      "Subtitle": "Everything you need to create a website with Bulma"
+      "Title": "Concepts",
+      "Subtitle": "What makes Bulma customizable"
     }
   ]
 }
