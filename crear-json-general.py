@@ -52,6 +52,7 @@ def procesar_archivo_html(ruta_html):
 
     # Construye el diccionario
     result_dict = {
+        'IconClass' : icon,
         'ActualTitle': title,
         'ActualSubtitle': subtitle
     }
@@ -60,8 +61,11 @@ def procesar_archivo_html(ruta_html):
     json_result = json.dumps(result_dict, indent=2)
 
     # Construye la ruta completa al archivo JSON
+
     ruta_json = ruta_html.replace('.html', '.json')
-    
+    ruta_json = os.path.basename(ruta_json)
+    ruta_json = ruta_json[0].lower() + ruta_json[1:]
+    ruta_json = os.path.join(os.path.dirname(ruta_html), ruta_json) 
     # Escribe el resultado en un archivo JSON
     with open(ruta_json, 'w', encoding='utf-8') as json_file:
         json_file.write(json_result)

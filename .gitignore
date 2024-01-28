@@ -2,3 +2,7 @@ pyenv/
 basura/
 *.copy
 documentation/
+* copy/
+*copy/
+_copy/
+_copy

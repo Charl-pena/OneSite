@@ -37,10 +37,15 @@ def ejecutar_scripts(carpeta_a_trabajar, carpeta_a_crear, folders_with_articles,
     ruta_script = "./organizar-files.py"
     subprocess.run(["python3", ruta_script, carpeta_a_trabajar, carpeta_a_crear])
 
-    # Ejecutar el script crear-json-general
-    ruta_script = "./crear-json-general.py"
-    subprocess.run(["python3", ruta_script, carpeta_a_crear, carpeta_a_crear])
+    # Ejecutar el script crear-documentation
+    ruta_script = "./crear-documentation.py"
+    json_necesario = "menu.json"
+    path_json_necesario = os.path.join(carpeta_a_crear, json_necesario)
+    subprocess.run(["python3", ruta_script, path_json_necesario, carpeta_a_crear])
 
+    # Ejecutar el script eliminar-json.py
+    ruta_script = "./eliminar-json.py"
+    subprocess.run(["python3", ruta_script, carpeta_a_trabajar])
 
 
 if __name__ == "__main__":

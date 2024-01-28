@@ -5,6 +5,18 @@ import json
 def clean_section_name(section_name):
     return section_name.replace("null53-", "")
 
+def extraer_info_json(json_necesario):
+	with open(json_necesario, 'r') as file:
+		# Obtener el tamaño del archivo
+		file_size = os.path.getsize(json_necesario)
+		
+		if file_size == 0:
+			print(f"El JSON {json_path} está vacío.")
+			return
+		data = json.load(file)
+	icon_class = data["IconClass"]
+	return icon_class
+
 def generate_menu_json(root_path, carpeta_a_crear):
     menu_sections = []
 
@@ -21,12 +33,14 @@ def generate_menu_json(root_path, carpeta_a_crear):
 
             for item_name in os.listdir(section_path):
                 item_path = os.path.join(section_path, item_name)
-
+                iconClass = ""
                 if os.path.isdir(item_path):
                     submenus = []
                     for submenu_name in os.listdir(item_path):
                         submenu_path = os.path.join(item_path, submenu_name)
-                        
+                        if ".json" in submenu_name:
+                            iconClass = extraer_info_json(submenu_path) 
+                            # print(extraer_info_json(submenu_path))
                         if os.path.isdir(submenu_path):
                             submenu_items = []
                             for article_name in os.listdir(submenu_path):
@@ -38,7 +52,7 @@ def generate_menu_json(root_path, carpeta_a_crear):
                                         article = {"Title": article_title.capitalize(), "Href": article_href}
                                         submenu_items.append(article)
 
-                    menu_item = {"Title": item_name.capitalize(), "Href": f"{base_folder}{item_name.lower()}/", "SubMenus": submenu_items}
+                    menu_item = {"Title": item_name.capitalize(), "Href": f"{base_folder}{item_name.lower()}/", "IconClass" : iconClass, "SubMenus": submenu_items}
                     menu_section["MenuItems"].append(menu_item)
 
             menu_sections.append(menu_section)
