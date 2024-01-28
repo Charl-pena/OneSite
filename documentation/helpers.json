@@ -1,7 +1,7 @@
 {
   "IconClass": null,
-  "ActualTitle": "Color helpers",
-  "ActualSubtitle": "Change the color of the text and/or background",
+  "Title": "Color helpers",
+  "Subtitle": "Change the color of the text and/or background",
   "Sections": [
     {
       "Href": "documentation/helpers/articles/color",

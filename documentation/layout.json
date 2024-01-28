@@ -1,7 +1,7 @@
 {
   "IconClass": null,
-  "ActualTitle": null,
-  "ActualSubtitle": null,
+  "Title": null,
+  "Subtitle": null,
   "Sections": [
     {
       "Href": "documentation/layout/articles/container",

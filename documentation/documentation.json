@@ -2,46 +2,55 @@
   "Sections": [
     {
       "Title": "Overview",
+      "Subtitle": "An overview of what Bulma as a framework is all about",
       "Href": "documentation/overview/",
       "IconClass": "fas fa-eye"
     },
     {
       "Title": "Customize",
+      "Subtitle": "Create your own theme with a simple set of variables",
       "Href": "documentation/customize/",
       "IconClass": null
     },
     {
       "Title": "Utilities",
+      "Subtitle": "Sass tools used by Bulma and available for you",
       "Href": "documentation/utilities/",
       "IconClass": null
     },
     {
       "Title": "Columns",
+      "Subtitle": "The power of Flexbox in a simple interface",
       "Href": "documentation/columns/",
       "IconClass": "fas fa-columns"
     },
     {
       "Title": "Form",
+      "Subtitle": null,
       "Href": "documentation/form/",
       "IconClass": "fab fa-wpforms"
     },
     {
       "Title": "Layout",
+      "Subtitle": null,
       "Href": "documentation/layout/",
       "IconClass": null
     },
     {
       "Title": "Components",
+      "Subtitle": "Advanced multi-part components with lots of possibilities",
       "Href": "documentation/components/",
       "IconClass": "fas fa-cubes"
     },
     {
       "Title": "Helpers",
+      "Subtitle": "Change the color of the text and/or background",
       "Href": "documentation/helpers/",
       "IconClass": null
     },
     {
       "Title": "Elements",
+      "Subtitle": "Essential interface elements that only require a single CSS class",
       "Href": "documentation/elements/",
       "IconClass": "fas fa-cube"
     }
