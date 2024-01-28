@@ -7,6 +7,12 @@
       "IconClass": null,
       "Title": "Breadcrumb",
       "Subtitle": "A simple breadcrumb component to improve your navigation experience"
+    },
+    {
+      "Href": "documentation/components/articles/breadcrumb",
+      "IconClass": null,
+      "Title": "Breadcrumb",
+      "Subtitle": "A simple breadcrumb component to improve your navigation experience"
     }
   ]
 }

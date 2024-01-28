@@ -31,6 +31,12 @@
       "Subtitle": "A simple breadcrumb component to improve your navigation experience"
     },
     {
+      "Href": "documentation/components/articles/breadcrumb",
+      "IconClass": null,
+      "Title": "Breadcrumb",
+      "Subtitle": "A simple breadcrumb component to improve your navigation experience"
+    },
+    {
       "Href": "documentation/helpers/articles/color",
       "IconClass": null,
       "Title": "Color",
@@ -49,7 +55,7 @@
       "Subtitle": "What makes Bulma customizable"
     },
     {
-      "Href": "documentation/utilities/articles/Mixins",
+      "Href": "documentation/utilities/articles/mixins",
       "IconClass": null,
       "Title": "Mixins",
       "Subtitle": "Utility mixins for custom elements and other CSS helpers"
