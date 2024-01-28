@@ -53,8 +53,8 @@ def procesar_archivo_html(ruta_html):
     # Construye el diccionario
     result_dict = {
         'IconClass' : icon,
-        'ActualTitle': title,
-        'ActualSubtitle': subtitle
+        'Title': title,
+        'Subtitle': subtitle
     }
 
     # Convierte el diccionario a formato JSON
@@ -97,7 +97,7 @@ def procesar_json(json_path, carpeta_a_crear):
         "Href": base_folder + ultimos_tres_elementos.replace('.json', ''),
         "IconClass": data.get("Icon", ""),
         "Title": title,
-        "Subtitle": data.get("ActualSubtitle", "")
+        "Subtitle": data.get("Subtitle", "")
     }
 
     return section

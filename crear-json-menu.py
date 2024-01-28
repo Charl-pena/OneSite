@@ -5,7 +5,7 @@ import json
 def clean_section_name(section_name):
     return section_name.replace("null53-", "")
 
-def extraer_info_json(json_necesario):
+def extraer_info_json(json_necesario, objecto_a_extraer):
 	with open(json_necesario, 'r') as file:
 		# Obtener el tamaño del archivo
 		file_size = os.path.getsize(json_necesario)
@@ -14,7 +14,7 @@ def extraer_info_json(json_necesario):
 			print(f"El JSON {json_path} está vacío.")
 			return
 		data = json.load(file)
-	icon_class = data["IconClass"]
+	icon_class = data[objecto_a_extraer]
 	return icon_class
 
 def generate_menu_json(root_path, carpeta_a_crear):
@@ -39,7 +39,8 @@ def generate_menu_json(root_path, carpeta_a_crear):
                     for submenu_name in os.listdir(item_path):
                         submenu_path = os.path.join(item_path, submenu_name)
                         if ".json" in submenu_name:
-                            iconClass = extraer_info_json(submenu_path) 
+                            iconClass = extraer_info_json(submenu_path, "IconClass") 
+                            actualSubtitle = extraer_info_json(submenu_path, "Subtitle") 
                             # print(extraer_info_json(submenu_path))
                         if os.path.isdir(submenu_path):
                             submenu_items = []
@@ -52,7 +53,7 @@ def generate_menu_json(root_path, carpeta_a_crear):
                                         article = {"Title": article_title.capitalize(), "Href": article_href}
                                         submenu_items.append(article)
 
-                    menu_item = {"Title": item_name.capitalize(), "Href": f"{base_folder}{item_name.lower()}/", "IconClass" : iconClass, "SubMenus": submenu_items}
+                    menu_item = {"Title": item_name.capitalize(), "Subtitle" : actualSubtitle, "Href": f"{base_folder}{item_name.lower()}/", "IconClass" : iconClass, "SubMenus": submenu_items}
                     menu_section["MenuItems"].append(menu_item)
 
             menu_sections.append(menu_section)

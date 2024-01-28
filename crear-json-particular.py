@@ -41,8 +41,8 @@ def procesar_archivo_html(ruta_html):
 
     # Construye el diccionario
     result_dict = {
-        'ActualTitle': title,
-        'ActualSubtitle': subtitle,
+        'Title': title,
+        'Subtitle': subtitle,
         'HTMLContent': html_content,
         'Icon': icon
     }
