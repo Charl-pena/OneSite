@@ -1,0 +1,12 @@
+{
+  "ActualTitle": null,
+  "ActualSubtitle": null,
+  "Sections": [
+    {
+      "Href": "documentation/form/articles/general",
+      "IconClass": null,
+      "Title": "General",
+      "Subtitle": "All generic form controls, designed for consistency"
+    }
+  ]
+}

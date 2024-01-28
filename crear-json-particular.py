@@ -11,10 +11,24 @@ def procesar_archivo_html(ruta_html):
     # Parsea el HTML usando BeautifulSoup
     soup = BeautifulSoup(html_content, 'html.parser')
 
-    # Extrae el título y el subtítulo
-    icon = soup.i.text.strip()
-    title = soup.title.text.strip()
-    subtitle = soup.subtitle.text.strip()
+    # Extrae el Icon, título y el subtítulo
+    # Verificar si existe el elemento 'icon'
+    if hasattr(soup, 'icon') and soup.icon:
+        icon = soup.icon.text.strip()
+    else:
+        icon = None  # Otra acción que desees realizar en caso de que no exista 'icon'
+
+    # Verificar si existe el elemento 'title'
+    if hasattr(soup, 'title') and soup.title:
+        title = soup.title.text.strip()
+    else:
+        title = None  # Otra acción que desees realizar en caso de que no exista 'title'
+
+    # Verificar si existe el elemento 'subtitle'
+    if hasattr(soup, 'subtitle') and soup.subtitle:
+        subtitle = soup.subtitle.text.strip()
+    else:
+        subtitle = None 
 
     # Busca el elemento subtitle y su siguiente hermano
     subtitle_element = soup.find('subtitle')

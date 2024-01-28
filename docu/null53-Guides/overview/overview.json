@@ -1,10 +1,12 @@
 {
+  "ActualTitle": null,
+  "ActualSubtitle": "An overview of what Bulma as a framework is all about",
   "Sections": [
     {
-      "Href": "documentation/overview/articles/d",
-      "IconClass": "fas fa-eye",
-      "Title": "D",
-      "Subtitle": "Everything you need to create a website with Bulma"
+      "Href": "documentation/overview/articles/start",
+      "IconClass": null,
+      "Title": "Start",
+      "Subtitle": "You only need 1 CSS file to use Bulma"
     }
   ]
 }

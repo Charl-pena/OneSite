@@ -1,31 +1,6 @@
 {
   "MenuSections": [
     {
-      "NameSection": "Guides",
-      "MenuItems": [
-        {
-          "Title": "Overview",
-          "Href": "documentation/overview/",
-          "SubMenus": [
-            {
-              "Title": "D",
-              "Href": "documentation/overview/articles/d/"
-            }
-          ]
-        },
-        {
-          "Title": "Customize",
-          "Href": "documentation/customize/",
-          "SubMenus": [
-            {
-              "Title": "C",
-              "Href": "documentation/customize/articles/c/"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "NameSection": "CSS Library",
       "MenuItems": [
         {
@@ -33,8 +8,8 @@
           "Href": "documentation/columns/",
           "SubMenus": [
             {
-              "Title": "B",
-              "Href": "documentation/columns/articles/b/"
+              "Title": "Basics",
+              "Href": "documentation/columns/articles/basics/"
             }
           ]
         },
@@ -43,8 +18,83 @@
           "Href": "documentation/elements/",
           "SubMenus": [
             {
-              "Title": "A",
-              "Href": "documentation/elements/articles/a/"
+              "Title": "Block",
+              "Href": "documentation/elements/articles/block/"
+            }
+          ]
+        },
+        {
+          "Title": "Form",
+          "Href": "documentation/form/",
+          "SubMenus": [
+            {
+              "Title": "General",
+              "Href": "documentation/form/articles/general/"
+            }
+          ]
+        },
+        {
+          "Title": "Components",
+          "Href": "documentation/components/",
+          "SubMenus": [
+            {
+              "Title": "Breadcrumb",
+              "Href": "documentation/components/articles/breadcrumb/"
+            }
+          ]
+        },
+        {
+          "Title": "Layout",
+          "Href": "documentation/layout/",
+          "SubMenus": [
+            {
+              "Title": "Container",
+              "Href": "documentation/layout/articles/container/"
+            }
+          ]
+        },
+        {
+          "Title": "Helpers",
+          "Href": "documentation/helpers/",
+          "SubMenus": [
+            {
+              "Title": "Color",
+              "Href": "documentation/helpers/articles/color/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NameSection": "Guides",
+      "MenuItems": [
+        {
+          "Title": "Customize",
+          "Href": "documentation/customize/",
+          "SubMenus": [
+            {
+              "Title": "Concepts",
+              "Href": "documentation/customize/articles/concepts/"
+            }
+          ]
+        },
+        {
+          "Title": "Overview",
+          "Href": "documentation/overview/",
+          "SubMenus": [
+            {
+              "Title": "Start",
+              "Href": "documentation/overview/articles/start/"
+            }
+          ]
+        },
+        {
+          "Title": "Utilities",
+          "Href": "documentation/utilities/",
+          "SubMenus": [
+            {
+              "Title": "Mixins",
+              "Href": "documentation/utilities/articles/mixins/"
             }
           ]
         }
