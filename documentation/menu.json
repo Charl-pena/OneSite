@@ -32,7 +32,7 @@
         {
           "Title": "Utilities",
           "Href": "documentation/utilities/",
-          "IconClass": null,
+          "IconClass": "fas fa-tools",
           "SubMenus": [
             {
               "Title": "Mixins",

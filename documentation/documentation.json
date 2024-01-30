@@ -16,7 +16,7 @@
       "Title": "Utilities",
       "Subtitle": "Sass tools used by Bulma and available for you",
       "Href": "documentation/utilities/",
-      "IconClass": null
+      "IconClass": "fas fa-tools"
     },
     {
       "Title": "Columns",

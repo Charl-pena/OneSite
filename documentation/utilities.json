@@ -1,5 +1,5 @@
 {
-  "IconClass": null,
+  "IconClass": "fas fa-tools",
   "Title": null,
   "Subtitle": "Sass tools used by Bulma and available for you",
   "Sections": [
