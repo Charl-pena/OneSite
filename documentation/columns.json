@@ -4,8 +4,14 @@
   "Subtitle": "The power of Flexbox in a simple interface",
   "Sections": [
     {
+      "Href": "documentation/columns/articles/sizes",
+      "IconClass": null,
+      "Title": "Sizes",
+      "Subtitle": "Define the size of each column individually"
+    },
+    {
       "Href": "documentation/columns/articles/basics",
-      "IconClass": "",
+      "IconClass": "fas fa-columns",
       "Title": "Basics",
       "Subtitle": "A simple way to build responsive columns"
     }

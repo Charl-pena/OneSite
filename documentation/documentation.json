@@ -10,7 +10,7 @@
       "Title": "Customize",
       "Subtitle": "Create your own theme with a simple set of variables",
       "Href": "documentation/customize/",
-      "IconClass": null
+      "IconClass": "fas fa-paint-brush"
     },
     {
       "Title": "Utilities",
@@ -32,9 +32,9 @@
     },
     {
       "Title": "Layout",
-      "Subtitle": null,
+      "Subtitle": "The indispensable form controls, designed for maximum clarity",
       "Href": "documentation/layout/",
-      "IconClass": null
+      "IconClass": "fas fa-warehouse"
     },
     {
       "Title": "Components",
@@ -46,7 +46,7 @@
       "Title": "Helpers",
       "Subtitle": "Change the color of the text and/or background",
       "Href": "documentation/helpers/",
-      "IconClass": null
+      "IconClass": "fas fa-medkit"
     },
     {
       "Title": "Elements",

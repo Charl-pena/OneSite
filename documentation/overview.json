@@ -4,6 +4,12 @@
   "Subtitle": "An overview of what Bulma as a framework is all about",
   "Sections": [
     {
+      "Href": "documentation/overview/articles/css classes",
+      "IconClass": null,
+      "Title": "Css classes",
+      "Subtitle": "You only need 1 CSS file to use Bulma"
+    },
+    {
       "Href": "documentation/overview/articles/start",
       "IconClass": null,
       "Title": "Start",

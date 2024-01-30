@@ -1,5 +1,5 @@
 {
-  "IconClass": null,
+  "IconClass": "fas fa-medkit",
   "Title": "Color helpers",
   "Subtitle": "Change the color of the text and/or background",
   "Sections": [

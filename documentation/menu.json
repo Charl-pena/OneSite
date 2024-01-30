@@ -9,6 +9,10 @@
           "IconClass": "fas fa-eye",
           "SubMenus": [
             {
+              "Title": "Css classes",
+              "Href": "documentation/overview/articles/css classes/"
+            },
+            {
               "Title": "Start",
               "Href": "documentation/overview/articles/start/"
             }
@@ -17,7 +21,7 @@
         {
           "Title": "Customize",
           "Href": "documentation/customize/",
-          "IconClass": null,
+          "IconClass": "fas fa-paint-brush",
           "SubMenus": [
             {
               "Title": "Concepts",
@@ -47,6 +51,10 @@
           "IconClass": "fas fa-columns",
           "SubMenus": [
             {
+              "Title": "Sizes",
+              "Href": "documentation/columns/articles/sizes/"
+            },
+            {
               "Title": "Basics",
               "Href": "documentation/columns/articles/basics/"
             }
@@ -66,8 +74,12 @@
         {
           "Title": "Layout",
           "Href": "documentation/layout/",
-          "IconClass": null,
+          "IconClass": "fas fa-warehouse",
           "SubMenus": [
+            {
+              "Title": "Level",
+              "Href": "documentation/layout/articles/level/"
+            },
             {
               "Title": "Container",
               "Href": "documentation/layout/articles/container/"
@@ -88,7 +100,7 @@
         {
           "Title": "Helpers",
           "Href": "documentation/helpers/",
-          "IconClass": null,
+          "IconClass": "fas fa-medkit",
           "SubMenus": [
             {
               "Title": "Color",

@@ -1,8 +1,14 @@
 {
-  "IconClass": null,
+  "IconClass": "fas fa-warehouse",
   "Title": null,
-  "Subtitle": null,
+  "Subtitle": "The indispensable form controls, designed for maximum clarity",
   "Sections": [
+    {
+      "Href": "documentation/layout/articles/level",
+      "IconClass": "fas fa-ruler-horizontal",
+      "Title": "Level",
+      "Subtitle": "The indispensable form controls, designed for maximum clarity"
+    },
     {
       "Href": "documentation/layout/articles/container",
       "IconClass": null,
