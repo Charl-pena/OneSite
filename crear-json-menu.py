@@ -5,6 +5,12 @@ import json
 def clean_section_name(section_name):
     return section_name.replace("null53-", "")
 
+def extract_number_from_filename(filename):
+    try:
+        return int(filename.split('_')[0])
+    except ValueError:
+        return float('inf')  # Si no es un número, colócalo al final
+
 def extraer_info_json(json_necesario, objecto_a_extraer):
 	with open(json_necesario, 'r') as file:
 		# Obtener el tamaño del archivo
@@ -31,9 +37,15 @@ def generate_menu_json(root_path, carpeta_a_crear):
             cleaned_section_name = clean_section_name(section_name)
             menu_section = {"NameSection": cleaned_section_name, "MenuItems": []}
 
-            for item_name in os.listdir(section_path):
+            lista_ordenada = sorted(os.listdir(section_path), key=lambda x: extract_number_from_filename(x))
+            for item_name in lista_ordenada:
                 item_path = os.path.join(section_path, item_name)
                 iconClass = ""
+                old_name = ""
+                if item_name[0].isdigit():
+                    old_name = item_name
+                    item_name = item_name.split('_')[1]
+
                 if os.path.isdir(item_path):
                     submenus = []
                     for submenu_name in os.listdir(item_path):
@@ -41,20 +53,25 @@ def generate_menu_json(root_path, carpeta_a_crear):
                         if ".json" in submenu_name:
                             iconClass = extraer_info_json(submenu_path, "IconClass") 
                             actualSubtitle = extraer_info_json(submenu_path, "Subtitle") 
-                            # print(extraer_info_json(submenu_path))
+                            # print(submenu_name)
                         if os.path.isdir(submenu_path):
                             submenu_items = []
                             for article_name in os.listdir(submenu_path):
                                 article_path = os.path.join(submenu_path, article_name)
-                                if ".html" not in article_name:
+                                if ".json" in article_name:
                                     if os.path.isfile(article_path):
                                         article_title, article_extension = os.path.splitext(article_name)
                                         article_href = f"{base_folder}{item_name.lower()}/{submenu_name.lower()}/{article_title.lower()}/"
                                         article = {"Title": article_title.capitalize(), "Href": article_href}
                                         submenu_items.append(article)
-
+                    
                     menu_item = {"Title": item_name.capitalize(), "Subtitle" : actualSubtitle, "Href": f"{base_folder}{item_name.lower()}/", "IconClass" : iconClass, "SubMenus": submenu_items}
                     menu_section["MenuItems"].append(menu_item)
+
+                if old_name != "":
+                    # print(item_path)
+                    # print(item_path.replace(old_name, item_name))
+                    os.rename(item_path, item_path.replace(old_name, item_name))
 
             menu_sections.append(menu_section)
 

@@ -2,22 +2,12 @@ import os
 import json
 import sys
 from bs4 import BeautifulSoup
-# def procesar_cadena(input_str):
-#     # Eliminar la subcadena "null53-"
-#     processed_str = input_str.replace("null53-", "")
-
-#     # Dividir la cadena en partes
-#     partes = processed_str.split('/')
-
-#     # Reorganizar las partes según el patrón deseado
-#     output_str = "/".join([partes[0], partes[2], partes[4]])
-
-#     return output_str
 
 def procesar_archivo_html(ruta_html):
     # Lee el contenido del archivo HTML
     with open(ruta_html, 'r', encoding='utf-8') as file:
         html_content = file.read()
+        # primera_linea = html_content.splitlines()[0]
 
     # Parsea el HTML usando BeautifulSoup
     soup = BeautifulSoup(html_content, 'html.parser')
@@ -63,10 +53,12 @@ def procesar_archivo_html(ruta_html):
 
     # Construye la ruta completa al archivo JSON
 
-    ruta_json = ruta_html.replace('.html', '.json')
-    ruta_json = os.path.basename(ruta_json)
-    ruta_json = ruta_json[0].lower() + ruta_json[1:]
-    ruta_json = os.path.join(os.path.dirname(ruta_html), ruta_json) 
+    file_name_minuscula = os.path.basename(ruta_html).replace('.html', '.json')
+    file_name_minuscula = file_name_minuscula[0].lower() + file_name_minuscula[1:]
+
+
+    ruta_json = os.path.join(os.path.dirname(ruta_html), file_name_minuscula)
+    
     # Escribe el resultado en un archivo JSON
     with open(ruta_json, 'w', encoding='utf-8') as json_file:
         json_file.write(json_result)
@@ -85,7 +77,7 @@ def procesar_json(json_path, carpeta_a_crear):
 
     filename = os.path.basename(json_path)
     if filename[0].isdigit():
-        new_filename = filename[1:]
+        new_filename = filename.split('_')[1]
         new_filename = json_path.replace(filename, new_filename)
         os.rename(json_path, new_filename)
         json_path = new_filename
@@ -95,6 +87,8 @@ def procesar_json(json_path, carpeta_a_crear):
     # Dividir la ruta en partes utilizando '/'
     partes_ruta = json_path.split('/')
     # Obtener los últimos tres elementos
+    if partes_ruta[-3][0].isdigit():
+        partes_ruta[-3] = partes_ruta[-3].split('_')[1]
     ultimos_tres_elementos = '/'.join(partes_ruta[-3:])
 
     base_folder = carpeta_a_crear
@@ -130,26 +124,18 @@ def generar_json_general(carpeta_a_trabajar, carpeta_a_crear):
 
 def guardar_json_en_archivo(ruta_carpeta, json_data):
 
-    nombre_carpeta = os.path.basename(os.path.normpath(ruta_carpeta))
-    nombre_archivo = f"{nombre_carpeta}.json"
-    nombre_archivo = nombre_archivo[0].lower() + nombre_archivo[1:]
-    ruta_final = os.path.join(ruta_carpeta, nombre_archivo)
-    
-    if os.path.exists(ruta_final):
-        with open(ruta_final, 'r') as archivo_json:
-            contenido_existente = json.load(archivo_json)
+    for carpeta_actual, subcarpetas, archivos in os.walk(carpeta_a_trabajar):
+        if carpeta_actual == carpeta_a_trabajar:
+            for archivo in archivos:
+                if archivo.endswith('.json'):
+                    ruta_final = os.path.join(carpeta_actual, archivo)
+                    with open(ruta_final, 'r') as archivo_json:
+                        contenido_existente = json.load(archivo_json)
+                    contenido_existente.update(json_data)
+                    nuevo_contenido_json = json.dumps(contenido_existente, indent=2)
+                    with open(ruta_final, 'w') as archivo_json:
+                        archivo_json.write(nuevo_contenido_json)
 
-        contenido_existente.update(json_data)
-
-        # Paso 3: Serializar el diccionario de Python a formato JSON
-        nuevo_contenido_json = json.dumps(contenido_existente, indent=2)
-    
-        # Paso 4: Escribir el nuevo contenido JSON de vuelta al archivo
-        with open(ruta_final, 'w') as archivo_json:
-            archivo_json.write(nuevo_contenido_json)
-    else:
-        with open(ruta_final, 'w') as file:
-            json.dump(json_data, file, indent=2)
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
