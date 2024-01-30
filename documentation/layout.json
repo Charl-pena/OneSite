@@ -11,7 +11,7 @@
     },
     {
       "Href": "documentation/layout/articles/container",
-      "IconClass": null,
+      "IconClass": "fas fa-arrows-alt-h",
       "Title": "Container",
       "Subtitle": "A simple container to center your content horizontally"
     }
