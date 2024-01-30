@@ -7,7 +7,8 @@ def procesar_archivo_html(ruta_html):
     # Lee el contenido del archivo HTML
     with open(ruta_html, 'r', encoding='utf-8') as file:
         html_content = file.read()
-
+        primera_linea = html_content.splitlines()[0]
+    
     # Parsea el HTML usando BeautifulSoup
     soup = BeautifulSoup(html_content, 'html.parser')
 
@@ -44,8 +45,8 @@ def procesar_archivo_html(ruta_html):
     result_dict = {
         'Title': title,
         'Subtitle': subtitle,
+        'Icon': icon,
         'HTMLContent': html_content,
-        'Icon': icon
     }
 
     # Convierte el diccionario a formato JSON
@@ -54,6 +55,9 @@ def procesar_archivo_html(ruta_html):
     file_name_minuscula = os.path.basename(ruta_html).replace('.html', '.json')
     file_name_minuscula = file_name_minuscula[0].lower() + file_name_minuscula[1:]
     # Construye la ruta completa al archivo JSON
+    # Imprime la primera línea
+    if primera_linea.isdigit():
+        file_name_minuscula = primera_linea + file_name_minuscula
     ruta_json = os.path.join(os.path.dirname(ruta_html), file_name_minuscula)
 
     # Escribe el resultado en un archivo JSON

@@ -83,6 +83,13 @@ def procesar_json(json_path, carpeta_a_crear):
             return
         data = json.load(file)
 
+    filename = os.path.basename(json_path)
+    if filename[0].isdigit():
+        new_filename = filename[1:]
+        new_filename = json_path.replace(filename, new_filename)
+        os.rename(json_path, new_filename)
+        json_path = new_filename
+
     title = os.path.splitext(os.path.basename(json_path))[0].capitalize()
 
     # Dividir la ruta en partes utilizando '/'
