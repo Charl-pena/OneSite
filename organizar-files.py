@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 import shutil
 from pathlib import Path
@@ -41,6 +42,25 @@ def find_folders_with_articles(root_folder):
 
     return folders_with_articles, original_folder_paths
 
+def delete_prefix_folders(directorio):
+    for nombre_carpeta in os.listdir(directorio):
+        ruta_carpeta = os.path.join(directorio, nombre_carpeta)
+        # Patrón que debe cumplir el nombre de la carpeta
+        patron = re.compile(r"\d+_")
+        
+        # Verifica si es una carpeta y si el fragmento 'd_' está en el nombre
+        if os.path.isdir(ruta_carpeta):
+            if patron.match(nombre_carpeta):  
+                # Construye el nuevo nombre eliminando el fragmento 'd_'
+                nuevo_nombre = nombre_carpeta.split('_')[1]
+                
+                # Construye la nueva ruta con el nuevo nombre
+                nueva_ruta_carpeta = os.path.join(directorio, nuevo_nombre)
+                 
+                # Renombra la carpeta
+                os.rename(ruta_carpeta, nueva_ruta_carpeta)
+                print(f"Renombrada: {nombre_carpeta} -> {nuevo_nombre}")
+
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Uso: python organizar-files.py <carpeta_a_trabajar> <carpeta_a_crear>")
@@ -60,5 +80,6 @@ if __name__ == "__main__":
         if os.path.exists(carpeta_a_crear):
             shutil.rmtree(carpeta_a_crear)
         copiar_contenidos(carpeta_a_trabajar, carpeta_a_crear, folders_with_articles, original_folder_paths)
+        delete_prefix_folders(carpeta_a_crear)
     else:
         print("No se encontraron carpetas con subcarpeta 'articles'.")

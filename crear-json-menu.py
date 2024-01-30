@@ -68,11 +68,6 @@ def generate_menu_json(root_path, carpeta_a_crear):
                     menu_item = {"Title": item_name.capitalize(), "Subtitle" : actualSubtitle, "Href": f"{base_folder}{item_name.lower()}/", "IconClass" : iconClass, "SubMenus": submenu_items}
                     menu_section["MenuItems"].append(menu_item)
 
-                if old_name != "":
-                    # print(item_path)
-                    # print(item_path.replace(old_name, item_name))
-                    os.rename(item_path, item_path.replace(old_name, item_name))
-
             menu_sections.append(menu_section)
 
     menu_json = {"MenuSections": menu_sections}
