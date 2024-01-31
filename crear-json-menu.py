@@ -36,9 +36,10 @@ def generate_menu_json(root_path, carpeta_a_crear):
     if not carpeta_a_crear.endswith('/'):
         base_folder  += '/'
 
-    for section_name in os.listdir(root_path):
+    primera_lista_ordenada = sorted(os.listdir(root_path), key=lambda x: extract_number_from_filename(x))
+    for section_name in primera_lista_ordenada:
         section_path = os.path.join(root_path, section_name)
-
+        # print(section_path)
         if os.path.isdir(section_path):
             cleaned_section_name = clean_section_name(section_name)
             menu_section = {"NameSection": cleaned_section_name, "MenuItems": []}
