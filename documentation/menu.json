@@ -68,12 +68,12 @@
           "IconClass": "fas fa-columns",
           "SubMenus": [
             {
-              "Title": "1_basics",
-              "Href": "documentation/columns/articles/1_basics/"
+              "Title": "Basics",
+              "Href": "documentation/columns/articles/basics/"
             },
             {
-              "Title": "2_sizes",
-              "Href": "documentation/columns/articles/2_sizes/"
+              "Title": "Sizes",
+              "Href": "documentation/columns/articles/sizes/"
             }
           ]
         }
@@ -88,12 +88,12 @@
           "IconClass": "fas fa-eye",
           "SubMenus": [
             {
-              "Title": "1_start",
-              "Href": "documentation/overview/articles/1_start/"
+              "Title": "Start",
+              "Href": "documentation/overview/articles/start/"
             },
             {
-              "Title": "2_css classes",
-              "Href": "documentation/overview/articles/2_css classes/"
+              "Title": "Css classes",
+              "Href": "documentation/overview/articles/css classes/"
             }
           ]
         },
