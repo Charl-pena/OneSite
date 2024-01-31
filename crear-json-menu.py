@@ -59,7 +59,7 @@ def generate_menu_json(root_path, carpeta_a_crear):
                         if os.path.isdir(submenu_path):
                             submenu_items = []
                             segunda_lista_ordenada = sorted(os.listdir(submenu_path), key=lambda x: extract_number_from_filename(x))
-                            # print(segunda_lista_ordenada)
+                            print(segunda_lista_ordenada)
                             for article_name in segunda_lista_ordenada:
                                 article_path = os.path.join(submenu_path, article_name)
                                 if ".json" in article_name:
