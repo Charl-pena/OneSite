@@ -5,7 +5,7 @@
   "Sections": [
     {
       "Href": "documentation/helpers/articles/color",
-      "IconClass": null,
+      "IconClass": "fas fa-tint",
       "Title": "Color",
       "Subtitle": "Change the color of the text and/or background"
     }

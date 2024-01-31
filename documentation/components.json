@@ -5,7 +5,7 @@
   "Sections": [
     {
       "Href": "documentation/components/articles/breadcrumb",
-      "IconClass": null,
+      "IconClass": "fas fa-ellipsis-h",
       "Title": "Breadcrumb",
       "Subtitle": "A simple breadcrumb component to improve your navigation experience"
     }

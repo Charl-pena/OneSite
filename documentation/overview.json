@@ -5,13 +5,13 @@
   "Sections": [
     {
       "Href": "documentation/overview/articles/start",
-      "IconClass": null,
+      "IconClass": "fas fa-eye",
       "Title": "Start",
       "Subtitle": "You only need 1 CSS file to use Bulma"
     },
     {
       "Href": "documentation/overview/articles/css classes",
-      "IconClass": null,
+      "IconClass": "fab fa-css3",
       "Title": "Css classes",
       "Subtitle": "Bulma is simply a collection of CSS classes. Write the HTML code you want."
     }

@@ -5,7 +5,7 @@
   "Sections": [
     {
       "Href": "documentation/utilities/articles/mixins",
-      "IconClass": null,
+      "IconClass": "fas fa-equals",
       "Title": "Mixins",
       "Subtitle": "Utility mixins for custom elements and other CSS helpers"
     }

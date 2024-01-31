@@ -5,7 +5,7 @@
   "Sections": [
     {
       "Href": "documentation/form/articles/general",
-      "IconClass": null,
+      "IconClass": "far fa-keyboard",
       "Title": "General",
       "Subtitle": "All generic form controls, designed for consistency"
     }

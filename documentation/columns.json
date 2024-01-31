@@ -5,7 +5,7 @@
   "Sections": [
     {
       "Href": "documentation/columns/articles/sizes",
-      "IconClass": null,
+      "IconClass": "fas fa-expand-arrows-alt",
       "Title": "Sizes",
       "Subtitle": "Define the size of each column individually"
     },
