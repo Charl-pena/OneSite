@@ -38,6 +38,7 @@ def generate_menu_json(root_path, carpeta_a_crear):
             menu_section = {"NameSection": cleaned_section_name, "MenuItems": []}
 
             lista_ordenada = sorted(os.listdir(section_path), key=lambda x: extract_number_from_filename(x))
+            # print(lista_ordenada)
             for item_name in lista_ordenada:
                 item_path = os.path.join(section_path, item_name)
                 iconClass = ""
@@ -48,6 +49,7 @@ def generate_menu_json(root_path, carpeta_a_crear):
 
                 if os.path.isdir(item_path):
                     submenus = []
+                    # print(os.listdir(item_path))
                     for submenu_name in os.listdir(item_path):
                         submenu_path = os.path.join(item_path, submenu_name)
                         if ".json" in submenu_name:
@@ -56,7 +58,9 @@ def generate_menu_json(root_path, carpeta_a_crear):
                             # print(submenu_name)
                         if os.path.isdir(submenu_path):
                             submenu_items = []
-                            for article_name in os.listdir(submenu_path):
+                            segunda_lista_ordenada = sorted(os.listdir(submenu_path), key=lambda x: extract_number_from_filename(x))
+                            # print(segunda_lista_ordenada)
+                            for article_name in segunda_lista_ordenada:
                                 article_path = os.path.join(submenu_path, article_name)
                                 if ".json" in article_name:
                                     if os.path.isfile(article_path):
