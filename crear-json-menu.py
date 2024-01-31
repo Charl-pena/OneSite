@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 import json
 
@@ -25,7 +26,7 @@ def extraer_info_json(json_necesario, objecto_a_extraer):
 
 def generate_menu_json(root_path, carpeta_a_crear):
     menu_sections = []
-
+    patron = re.compile(r"\d+_")
     base_folder = carpeta_a_crear
     if not carpeta_a_crear.endswith('/'):
         base_folder  += '/'
@@ -65,6 +66,9 @@ def generate_menu_json(root_path, carpeta_a_crear):
                                 if ".json" in article_name:
                                     if os.path.isfile(article_path):
                                         article_title, article_extension = os.path.splitext(article_name)
+                                        # print(article_title)
+                                        if patron.match(article_title):
+                                            article_title = article_title.split('_')[1]
                                         article_href = f"{base_folder}{item_name.lower()}/{submenu_name.lower()}/{article_title.lower()}/"
                                         article = {"Title": article_title.capitalize(), "Href": article_href}
                                         submenu_items.append(article)

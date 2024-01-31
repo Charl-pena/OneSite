@@ -43,11 +43,11 @@ def find_folders_with_articles(root_folder):
     return folders_with_articles, original_folder_paths
 
 def delete_prefix_folders(directorio):      
+    # Patrón que debe cumplir el nombre (tanto para carpetas como para archivos)
+    patron = re.compile(r"\d+_")
     for directorio_actual, carpetas, archivos in os.walk(directorio):
         for nombre in carpetas + archivos:
             ruta_origen = os.path.join(directorio_actual, nombre)
-            # Patrón que debe cumplir el nombre (tanto para carpetas como para archivos)
-            patron = re.compile(r"\d+_")
             # Verifica si es una carpeta o archivo y si el fragmento 'd_' está en el nombre
             if os.path.isfile(ruta_origen):
                 if patron.match(nombre):
@@ -61,8 +61,6 @@ def delete_prefix_folders(directorio):
     for directorio_actual, carpetas, archivos in os.walk(directorio):
         for nombre in carpetas + archivos:
             ruta_origen = os.path.join(directorio_actual, nombre)
-            # Patrón que debe cumplir el nombre (tanto para carpetas como para archivos)
-            patron = re.compile(r"\d+_")
             # Verifica si es una carpeta o archivo y si el fragmento 'd_' está en el nombre
             if os.path.isdir(ruta_origen):
                 if patron.match(nombre):
