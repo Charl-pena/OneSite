@@ -1,6 +1,48 @@
 {
   "MenuSections": [
     {
+      "NameSection": "Guides",
+      "MenuItems": [
+        {
+          "Title": "Overview",
+          "Href": "documentation/overview/",
+          "IconClass": "fas fa-eye",
+          "SubMenus": [
+            {
+              "Title": "Start",
+              "Href": "documentation/overview/articles/start/"
+            },
+            {
+              "Title": "Css classes",
+              "Href": "documentation/overview/articles/css classes/"
+            }
+          ]
+        },
+        {
+          "Title": "Customize",
+          "Href": "documentation/customize/",
+          "IconClass": "fas fa-paint-brush",
+          "SubMenus": [
+            {
+              "Title": "Concepts",
+              "Href": "documentation/customize/articles/concepts/"
+            }
+          ]
+        },
+        {
+          "Title": "Utilities",
+          "Href": "documentation/utilities/",
+          "IconClass": "fas fa-tools",
+          "SubMenus": [
+            {
+              "Title": "Mixins",
+              "Href": "documentation/utilities/articles/mixins/"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "NameSection": "CSS Library",
       "MenuItems": [
         {
@@ -74,48 +116,6 @@
             {
               "Title": "Block",
               "Href": "documentation/elements/articles/block/"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "NameSection": "Guides",
-      "MenuItems": [
-        {
-          "Title": "Overview",
-          "Href": "documentation/overview/",
-          "IconClass": "fas fa-eye",
-          "SubMenus": [
-            {
-              "Title": "Start",
-              "Href": "documentation/overview/articles/start/"
-            },
-            {
-              "Title": "Css classes",
-              "Href": "documentation/overview/articles/css classes/"
-            }
-          ]
-        },
-        {
-          "Title": "Customize",
-          "Href": "documentation/customize/",
-          "IconClass": "fas fa-paint-brush",
-          "SubMenus": [
-            {
-              "Title": "Concepts",
-              "Href": "documentation/customize/articles/concepts/"
-            }
-          ]
-        },
-        {
-          "Title": "Utilities",
-          "Href": "documentation/utilities/",
-          "IconClass": "fas fa-tools",
-          "SubMenus": [
-            {
-              "Title": "Mixins",
-              "Href": "documentation/utilities/articles/mixins/"
             }
           ]
         }
