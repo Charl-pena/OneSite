@@ -74,7 +74,7 @@ def generate_menu_json(root_path, carpeta_a_crear):
 
             menu_sections.append(menu_section)
     menu_json = {"MenuSections": menu_sections}
-    print(menu_json)
+    # print(menu_json)
     return json.dumps(menu_json, indent=2)
 
 def guardar_json_en_archivo(ruta_carpeta, result_json, file_name):
