@@ -1,0 +1,19 @@
+{
+  "IconClass": "fas fa-eye",
+  "Title": null,
+  "Subtitle": "An overview of what Bulma as a framework is all about",
+  "Sections": [
+    {
+      "Href": "documentation/overview/articles/start",
+      "IconClass": "fas fa-eye",
+      "Title": "Start",
+      "Subtitle": "You only need 1 CSS file to use Bulma"
+    },
+    {
+      "Href": "documentation/overview/articles/css classes",
+      "IconClass": "fab fa-css3",
+      "Title": "Css classes",
+      "Subtitle": "Bulma is simply a collection of CSS classes. Write the HTML code you want."
+    }
+  ]
+}

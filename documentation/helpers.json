@@ -1,0 +1,13 @@
+{
+  "IconClass": "fas fa-medkit",
+  "Title": "Color helpers",
+  "Subtitle": "Change the color of the text and/or background",
+  "Sections": [
+    {
+      "Href": "documentation/helpers/articles/color",
+      "IconClass": "fas fa-tint",
+      "Title": "Color",
+      "Subtitle": "Change the color of the text and/or background"
+    }
+  ]
+}
