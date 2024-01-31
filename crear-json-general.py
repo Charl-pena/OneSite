@@ -3,6 +3,12 @@ import json
 import sys
 from bs4 import BeautifulSoup
 
+def extract_number_from_filename(filename):
+    try:
+        return int(filename.split('_')[0])
+    except ValueError:
+        return float('inf')  # Si no es un número, colócalo al final
+
 def procesar_archivo_html(ruta_html):
     # Lee el contenido del archivo HTML
     with open(ruta_html, 'r', encoding='utf-8') as file:
@@ -114,7 +120,9 @@ def generar_json_general(carpeta_a_trabajar, carpeta_a_crear):
                     ruta_html = os.path.join(carpeta_actual, archivo)
                     procesar_archivo_html(ruta_html)
         if carpeta_actual != carpeta_a_trabajar:  # Excluir la carpeta raíz
-            for archivo in archivos:
+            lista_ordenada = sorted(archivos, key=lambda x: extract_number_from_filename(x))
+            # print(lista_ordenada)
+            for archivo in lista_ordenada:
                 if archivo.endswith('.json'):
                     json_path = os.path.join(carpeta_actual, archivo)
                     section = procesar_json(json_path, carpeta_a_crear)
