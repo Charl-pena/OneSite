@@ -4,6 +4,11 @@ import sys
 import json
 
 def clean_section_name(section_name):
+    patron = re.compile(r"\d+_null53-")
+    # print(section_name)
+    if patron.match(section_name):
+        # print(re.sub(patron, '', section_name))
+        return re.sub(patron, '', section_name)
     return section_name.replace("null53-", "")
 
 def extract_number_from_filename(filename):
