@@ -4,6 +4,21 @@
       "NameSection": "CSS Library",
       "MenuItems": [
         {
+          "Title": "Columns",
+          "Href": "documentation/columns/",
+          "IconClass": "fas fa-columns",
+          "SubMenus": [
+            {
+              "Title": "Basics",
+              "Href": "documentation/columns/articles/basics/"
+            },
+            {
+              "Title": "Sizes",
+              "Href": "documentation/columns/articles/sizes/"
+            }
+          ]
+        },
+        {
           "Title": "Form",
           "Href": "documentation/form/",
           "IconClass": "fab fa-wpforms",
@@ -11,28 +26,6 @@
             {
               "Title": "General",
               "Href": "documentation/form/articles/general/"
-            }
-          ]
-        },
-        {
-          "Title": "Elements",
-          "Href": "documentation/elements/",
-          "IconClass": "fas fa-cube",
-          "SubMenus": [
-            {
-              "Title": "Block",
-              "Href": "documentation/elements/articles/block/"
-            }
-          ]
-        },
-        {
-          "Title": "Helpers",
-          "Href": "documentation/helpers/",
-          "IconClass": "fas fa-medkit",
-          "SubMenus": [
-            {
-              "Title": "Color",
-              "Href": "documentation/helpers/articles/color/"
             }
           ]
         },
@@ -63,17 +56,24 @@
           ]
         },
         {
-          "Title": "Columns",
-          "Href": "documentation/columns/",
-          "IconClass": "fas fa-columns",
+          "Title": "Helpers",
+          "Href": "documentation/helpers/",
+          "IconClass": "fas fa-medkit",
           "SubMenus": [
             {
-              "Title": "Basics",
-              "Href": "documentation/columns/articles/basics/"
-            },
+              "Title": "Color",
+              "Href": "documentation/helpers/articles/color/"
+            }
+          ]
+        },
+        {
+          "Title": "Elements",
+          "Href": "documentation/elements/",
+          "IconClass": "fas fa-cube",
+          "SubMenus": [
             {
-              "Title": "Sizes",
-              "Href": "documentation/columns/articles/sizes/"
+              "Title": "Block",
+              "Href": "documentation/elements/articles/block/"
             }
           ]
         }
