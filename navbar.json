@@ -1,0 +1,33 @@
+{
+  "Logo": "https://bulma.io/images/bulma-logo.png",
+  "NavSections": {
+    "navbar-start": [
+      {
+        "Href": "documentation/",
+        "Title": "Documentation",
+        "Subtitle": null,
+        "Icon": "fas fa-book"
+      },
+      {
+        "Href": "videos/",
+        "Title": "Videos",
+        "Subtitle": "Official Bulma Guides",
+        "Icon": "fas fa-play-circle"
+      },
+      {
+        "Href": "expo/",
+        "Title": "Expo",
+        "Subtitle": "Official Bulma showcase",
+        "Icon": "fas fa-star"
+      }
+    ],
+    "navbar-end": [
+      {
+        "Href": "github/",
+        "Title": null,
+        "Subtitle": null,
+        "Icon": "fab fa-lg fa-github-alt"
+      }
+    ]
+  }
+}
