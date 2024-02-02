@@ -46,21 +46,6 @@
       "NameSection": "CSS Library",
       "MenuItems": [
         {
-          "Title": "Columns",
-          "Href": "documentation/columns/",
-          "IconClass": "fas fa-columns",
-          "SubMenus": [
-            {
-              "Title": "Basics",
-              "Href": "documentation/columns/articles/basics/"
-            },
-            {
-              "Title": "Sizes",
-              "Href": "documentation/columns/articles/sizes/"
-            }
-          ]
-        },
-        {
           "Title": "Form",
           "Href": "documentation/form/",
           "IconClass": "fab fa-wpforms",
@@ -68,6 +53,28 @@
             {
               "Title": "General",
               "Href": "documentation/form/articles/general/"
+            }
+          ]
+        },
+        {
+          "Title": "Elements",
+          "Href": "documentation/elements/",
+          "IconClass": "fas fa-cube",
+          "SubMenus": [
+            {
+              "Title": "Block",
+              "Href": "documentation/elements/articles/block/"
+            }
+          ]
+        },
+        {
+          "Title": "Helpers",
+          "Href": "documentation/helpers/",
+          "IconClass": "fas fa-medkit",
+          "SubMenus": [
+            {
+              "Title": "Color",
+              "Href": "documentation/helpers/articles/color/"
             }
           ]
         },
@@ -98,24 +105,17 @@
           ]
         },
         {
-          "Title": "Helpers",
-          "Href": "documentation/helpers/",
-          "IconClass": "fas fa-medkit",
+          "Title": "Columns",
+          "Href": "documentation/columns/",
+          "IconClass": "fas fa-columns",
           "SubMenus": [
             {
-              "Title": "Color",
-              "Href": "documentation/helpers/articles/color/"
-            }
-          ]
-        },
-        {
-          "Title": "Elements",
-          "Href": "documentation/elements/",
-          "IconClass": "fas fa-cube",
-          "SubMenus": [
+              "Title": "Basics",
+              "Href": "documentation/columns/articles/basics/"
+            },
             {
-              "Title": "Block",
-              "Href": "documentation/elements/articles/block/"
+              "Title": "Sizes",
+              "Href": "documentation/columns/articles/sizes/"
             }
           ]
         }
