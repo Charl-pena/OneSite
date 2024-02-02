@@ -25,6 +25,7 @@ jobs:
       run: |
         python3 masterhand.py docu/ documentation/
         mkdir wwwroot
+        mv navbar.json wwwroot/
         mv documentation/ wwwroot/
         touch wwwroot/index.html
  
