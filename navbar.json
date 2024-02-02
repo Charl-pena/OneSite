@@ -8,19 +8,19 @@
           "Href": "documentation/",
           "Title": "Documentation",
           "Subtitle": null,
-          "Icon": "fas fa-book"
+          "IconClass": "fas fa-book"
         },
         {
           "Href": "videos/",
           "Title": "Videos",
           "Subtitle": "Official Bulma Guides",
-          "Icon": "fas fa-play-circle"
+          "IconClass": "fas fa-play-circle"
         },
         {
           "Href": "expo/",
           "Title": "Expo",
           "Subtitle": "Official Bulma showcase",
-          "Icon": "fas fa-star"
+          "IconClass": "fas fa-star"
         }
       ]
     },
@@ -31,7 +31,7 @@
           "Href": "github/",
           "Title": null,
           "Subtitle": null,
-          "Icon": "fab fa-lg fa-github-alt"
+          "IconClass": "fab fa-lg fa-github-alt"
         }
       ]
     }
