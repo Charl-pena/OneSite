@@ -64,7 +64,9 @@ def crear_navjson(nav_sections, logo, file_name):
 def generar_json(carpeta_a_trabajar, archivo_json_a_crear):
    logo = ""
    sectionName = ""
-   nav_sections = {}
+   nav_section = {}
+   nav_sections = []
+   flag_first_time = True
 
    for root, dirs, files in os.walk(carpeta_a_trabajar):
       if root == carpeta_a_trabajar:
@@ -74,11 +76,20 @@ def generar_json(carpeta_a_trabajar, archivo_json_a_crear):
       else:
          # print(root)
          for archivo in files:
-            sectionName = os.path.basename(root) 
-            if sectionName not in nav_sections:
-               nav_sections[sectionName] = []
-            nav_sections[sectionName].append(procesar_archivo_html(os.path.join(root, archivo)))
-   
+            # print(f"huevos {sectionName} JAJAJA {os.path.basename(root)}")
+            if sectionName != os.path.basename(root):
+               sectionName = os.path.basename(root) 
+               
+               if flag_first_time is True:
+                  flag_first_time = False
+               else:
+                  nav_sections.append(nav_section.copy())
+               nav_section["NameSection"] = sectionName
+               nav_section["MenuItems"]   = []
+
+            nav_section["MenuItems"].append(procesar_archivo_html(os.path.join(root, archivo)))
+
+   nav_sections.append(nav_section)
    crear_navjson(nav_sections, logo, archivo_json_a_crear)      
    
 
