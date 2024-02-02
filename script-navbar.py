@@ -35,10 +35,13 @@ def procesar_archivo_html(ruta_html):
    else:
       subtitle = None
        
-   href = os.path.basename(ruta_html).lower().replace(".html", "")
+   if hasattr(soup, 'href') and soup.href:
+      href = soup.href.text.strip()
+   else:
+      href = os.path.basename(ruta_html).lower().replace(".html", "") + '/'
    # Construye el diccionario
    result_dict = {
-       'Href': href + '/',
+       'Href': href,
        'Title': title,
        'Subtitle': subtitle,
        'IconClass': icon,
