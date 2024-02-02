@@ -41,7 +41,7 @@ def procesar_archivo_html(ruta_html):
        'Href': href + '/',
        'Title': title,
        'Subtitle': subtitle,
-       'Icon': icon,
+       'IconClass': icon,
    }
 
    return result_dict
