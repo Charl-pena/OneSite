@@ -2,72 +2,22 @@ import os
 import sys
 import subprocess
 
-def find_folders_with_articles_and_parent(carpeta_a_trabajar):
-    folders_with_articles = []
-    parent_folders_articles = []
 
-    for root, dirs, files in os.walk(carpeta_a_trabajar):
-        if "articles" in dirs:
 
-            parent_folders_articles.append(root)
-            folders_with_articles.append(os.path.join(root, "articles"))
+def ejecutar_scripts():
 
-    return folders_with_articles, parent_folders_articles
-
-def ejecutar_scripts(carpeta_a_trabajar, carpeta_a_crear, folders_with_articles, parent_folders_articles ):
-    for folder in folders_with_articles:
-        # Ruta al script crear-json-particular
-        ruta_script = "./crear-json-particular.py"
-
-        # Ejecutar el script crear-json-particular
-        subprocess.run(["python3", ruta_script, folder])
-    
-    for folder in parent_folders_articles:
-        # Ruta al script crear-json-general
-        ruta_script = "./crear-json-general.py"
-
-        # Ejecutar el script crear-json-general
-        subprocess.run(["python3", ruta_script, folder, carpeta_a_crear])
-    
-    # Ejecutar el script crear-json-menu
-    ruta_script = "./crear-json-menu.py"
+    # Ejecutar el script script-docu
+    ruta_script = "./script-docu.py"
+    carpeta_a_trabajar = "null53-docu/"
+    carpeta_a_crear =    "documentation/"
     subprocess.run(["python3", ruta_script, carpeta_a_trabajar, carpeta_a_crear])
 
-    # Ejecutar el script organizar-files
-    ruta_script = "./organizar-files.py"
-    subprocess.run(["python3", ruta_script, carpeta_a_trabajar, carpeta_a_crear])
-
-    # Ejecutar el script crear-documentation
-    ruta_script = "./crear-documentation.py"
-    json_necesario = "menu.json"
-    path_json_necesario = os.path.join(carpeta_a_crear, json_necesario)
-    subprocess.run(["python3", ruta_script, path_json_necesario, carpeta_a_crear])
-
-    # Ejecutar el script eliminar-json.py
-    ruta_script = "./limpiar-menu.py"
-    subprocess.run(["python3", ruta_script, path_json_necesario])
-
-    # Ejecutar el script eliminar-json.py
-    ruta_script = "./eliminar-json.py"
-    subprocess.run(["python3", ruta_script, carpeta_a_trabajar])
-
+    # Ejecutar el script script-navbar
+    ruta_script = "./script-navbar.py"
+    carpeta_a_trabajar = "null53-navbar/"
+    archivo_json_a_crear = "navbar.json"
+    subprocess.run(["python3", ruta_script, carpeta_a_trabajar, archivo_json_a_crear])
+    
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Uso: python masterhand.py <carpeta_a_trabajar> <carpeta_a_crear>")
-        sys.exit(1)
-
-    carpeta_a_trabajar = sys.argv[1]
-    carpeta_a_crear = sys.argv[2]
-
-    if not os.path.isdir(carpeta_a_trabajar):
-        print(f"La ruta proporcionada '{carpeta_a_trabajar}' no es una carpeta válida.")
-        sys.exit(1)
-
-
-    folders_with_articles, parent_folders_articles = find_folders_with_articles_and_parent(carpeta_a_trabajar)
-
-    if folders_with_articles and parent_folders_articles:
-        ejecutar_scripts(carpeta_a_trabajar, carpeta_a_crear, folders_with_articles, parent_folders_articles)
-    else:
-        print("No se encontraron carpetas con subcarpeta 'articles'.")
+    ejecutar_scripts()

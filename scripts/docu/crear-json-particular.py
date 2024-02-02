@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import os
 
-def procesar_archivo_html(ruta_html):
+def procesar_archivo_html(ruta_html,flag_html_content = True):
     # Lee el contenido del archivo HTML
     with open(ruta_html, 'r', encoding='utf-8') as file:
         html_content = file.read()
@@ -33,20 +33,28 @@ def procesar_archivo_html(ruta_html):
 
     # Busca el elemento subtitle y su siguiente hermano
     subtitle_element = soup.find('subtitle')
-    html_content = ''
-    if subtitle_element:
-        next_sibling = subtitle_element.find_next_sibling()
-        while next_sibling:
-            html_content += str(next_sibling)
-            next_sibling = next_sibling.find_next_sibling()
+    if flag_html_content is True:
+        html_content = ''
+        if subtitle_element:
+            next_sibling = subtitle_element.find_next_sibling()
+            while next_sibling:
+                html_content += str(next_sibling)
+                next_sibling = next_sibling.find_next_sibling()
 
-    # Construye el diccionario
-    result_dict = {
-        'Title': title,
-        'Subtitle': subtitle,
-        'Icon': icon,
-        'HTMLContent': html_content,
-    }
+        # Construye el diccionario
+        result_dict = {
+            'Title': title,
+            'Subtitle': subtitle,
+            'Icon': icon,
+            'HTMLContent': html_content,
+        }
+    else:
+        # Construye el diccionario
+        result_dict = {
+            'Title': title,
+            'Subtitle': subtitle,
+            'Icon': icon,
+        }
 
     # Convierte el diccionario a formato JSON
     json_result = json.dumps(result_dict, indent=2)
@@ -64,12 +72,16 @@ def procesar_archivo_html(ruta_html):
     print(f"JSON generado con éxito para {os.path.basename(ruta_html)}.")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Uso: python crear-json-particular.py <ruta_carpeta>")
+    if len(sys.argv) < 2:
+        print("Uso: python crear-json-particular.py <ruta_carpeta> flag:html_content")
         sys.exit(1)
 
     carpeta_html = sys.argv[1]
-
+    flag_html  = True
+    if len(sys.argv) > 2:
+        flag_html  = sys.argv[2]
+        if "False" in flag_html:
+            flag_html = False
     if not os.path.isdir(carpeta_html):
         print(f"La ruta proporcionada '{carpeta_html}' no es una carpeta válida.")
         sys.exit(1)
@@ -79,6 +91,6 @@ if __name__ == "__main__":
     if archivos_html:
         for archivo_html in archivos_html:
             ruta_html = os.path.join(carpeta_html, archivo_html)
-            procesar_archivo_html(ruta_html)
+            procesar_archivo_html(ruta_html, flag_html)
     else:
         print("No se encontraron archivos html.")
