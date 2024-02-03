@@ -7,13 +7,13 @@
         {
           "Href": "documentation/",
           "Title": "Documentation",
-          "Subtitle": null,
+          "Subtitle": "Official Bulma Documentation",
           "IconClass": "fas fa-book"
         },
         {
           "Href": "videos/",
           "Title": "Videos",
-          "Subtitle": "Official Bulma Guides",
+          "Subtitle": "Official Bulma Videos",
           "IconClass": "fas fa-play-circle"
         },
         {
