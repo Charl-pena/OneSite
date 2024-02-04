@@ -7,13 +7,13 @@
         {
           "Href": "documentation/",
           "Title": "Documentation",
-          "Subtitle": "Official Bulma Documentation",
+          "Subtitle": null,
           "IconClass": "fas fa-book"
         },
         {
           "Href": "videos/",
           "Title": "Videos",
-          "Subtitle": "Official Bulma Videos",
+          "Subtitle": "Official Bulma Guides",
           "IconClass": "fas fa-play-circle"
         },
         {
@@ -21,6 +21,12 @@
           "Title": "Expo",
           "Subtitle": "Official Bulma showcase",
           "IconClass": "fas fa-star"
+        },
+        {
+          "Href": "pax/",
+          "Title": "Pax",
+          "Subtitle": "Official Bulma Pax",
+          "IconClass": "fas fa-peace"
         }
       ]
     },

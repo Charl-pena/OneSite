@@ -3,6 +3,12 @@ import sys
 import json
 from bs4 import BeautifulSoup
 
+def extract_number_from_filename(filename):
+    try:
+        return int(filename.split('_')[0])
+    except ValueError:
+        return float('inf')  # Si no es un número, colócalo al final
+
 def extraer_logo(archivo):
    contenido = ""
    with open(archivo, 'r') as archivo:
@@ -38,7 +44,11 @@ def procesar_archivo_html(ruta_html):
    if hasattr(soup, 'href') and soup.href:
       href = soup.href.text.strip()
    else:
-      href = os.path.basename(ruta_html).lower().replace(".html", "") + '/'
+      filename = os.path.basename(ruta_html)
+      if filename[0].isdigit():
+         filename = filename.split('_')[1]
+      
+      href = filename.lower().replace(".html", "") + '/'
    # Construye el diccionario
    result_dict = {
        'Href': href,
@@ -78,7 +88,9 @@ def generar_json(carpeta_a_trabajar, archivo_json_a_crear):
             logo = extraer_logo(os.path.join(root, archivo))
       else:
          # print(root)
-         for archivo in files:
+         lista_ordenada = sorted(files, key=lambda x: extract_number_from_filename(x))
+         # print(lista_ordenada)
+         for archivo in lista_ordenada:
             # print(f"huevos {sectionName} JAJAJA {os.path.basename(root)}")
             if sectionName != os.path.basename(root):
                sectionName = os.path.basename(root) 
