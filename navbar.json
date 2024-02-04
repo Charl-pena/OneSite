@@ -11,12 +11,6 @@
           "IconClass": "fas fa-book"
         },
         {
-          "Href": "pax/",
-          "Title": "Pax",
-          "Subtitle": "Official Bulma Pax",
-          "IconClass": "fas fa-peace"
-        },
-        {
           "Href": "videos/",
           "Title": "Videos",
           "Subtitle": "Official Bulma Guides",
@@ -27,6 +21,12 @@
           "Title": "Expo",
           "Subtitle": "Official Bulma showcase",
           "IconClass": "fas fa-star"
+        },
+        {
+          "Href": "pax/",
+          "Title": "Pax",
+          "Subtitle": "Official Bulma Pax",
+          "IconClass": "fas fa-peace"
         }
       ]
     },
