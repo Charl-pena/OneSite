@@ -26,8 +26,8 @@ def extraer_info_json(json_necesario, objecto_a_extraer):
 			print(f"El JSON {json_path} está vacío.")
 			return
 		data = json.load(file)
-	icon_class = data[objecto_a_extraer]
-	return icon_class
+	objecto_extraido = data[objecto_a_extraer]
+	return objecto_extraido
 
 def generate_menu_json(root_path, carpeta_a_crear):
     menu_sections = []

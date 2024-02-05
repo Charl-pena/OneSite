@@ -43,7 +43,7 @@ def ejecutar_scripts(carpeta_a_trabajar, carpeta_a_crear, folders_with_articles,
     ruta_script = f"./{g_directory}/{p_folder}/crear-documentation.py"
     json_necesario = "menu.json"
     path_json_necesario = os.path.join(carpeta_a_crear, json_necesario)
-    subprocess.run(["python3", ruta_script, path_json_necesario, carpeta_a_crear])
+    subprocess.run(["python3", ruta_script, path_json_necesario, carpeta_a_trabajar, carpeta_a_crear])
 
     # Ejecutar el script eliminar-json.py
     ruta_script = f"./{g_directory}/{p_folder}/limpiar-menu.py"
