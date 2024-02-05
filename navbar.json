@@ -15,18 +15,6 @@
           "Title": "Igl\u00fc",
           "Subtitle": "El inicio nuevamente :)",
           "IconClass": "fas fa-igloo"
-        },
-        {
-          "Href": "expo/",
-          "Title": "Expo",
-          "Subtitle": "Official Bulma showcase",
-          "IconClass": "fas fa-star"
-        },
-        {
-          "Href": "pax/",
-          "Title": "Pax",
-          "Subtitle": "Official Bulma Pax",
-          "IconClass": "fas fa-peace"
         }
       ]
     },
