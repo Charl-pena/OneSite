@@ -46,28 +46,6 @@
       "NameSection": "CSS Library",
       "MenuItems": [
         {
-          "Title": "Form",
-          "Href": "documentation/form/",
-          "IconClass": "fab fa-wpforms",
-          "SubMenus": [
-            {
-              "Title": "General",
-              "Href": "documentation/form/articles/general/"
-            }
-          ]
-        },
-        {
-          "Title": "Elements",
-          "Href": "documentation/elements/",
-          "IconClass": "fas fa-cube",
-          "SubMenus": [
-            {
-              "Title": "Block",
-              "Href": "documentation/elements/articles/block/"
-            }
-          ]
-        },
-        {
           "Title": "Helpers",
           "Href": "documentation/helpers/",
           "IconClass": "fas fa-medkit",
@@ -75,6 +53,17 @@
             {
               "Title": "Color",
               "Href": "documentation/helpers/articles/color/"
+            }
+          ]
+        },
+        {
+          "Title": "Components",
+          "Href": "documentation/components/",
+          "IconClass": "fas fa-cubes",
+          "SubMenus": [
+            {
+              "Title": "Breadcrumb",
+              "Href": "documentation/components/articles/breadcrumb/"
             }
           ]
         },
@@ -94,13 +83,24 @@
           ]
         },
         {
-          "Title": "Components",
-          "Href": "documentation/components/",
-          "IconClass": "fas fa-cubes",
+          "Title": "Elements",
+          "Href": "documentation/elements/",
+          "IconClass": "fas fa-cube",
           "SubMenus": [
             {
-              "Title": "Breadcrumb",
-              "Href": "documentation/components/articles/breadcrumb/"
+              "Title": "Block",
+              "Href": "documentation/elements/articles/block/"
+            }
+          ]
+        },
+        {
+          "Title": "Form",
+          "Href": "documentation/form/",
+          "IconClass": "fab fa-wpforms",
+          "SubMenus": [
+            {
+              "Title": "General",
+              "Href": "documentation/form/articles/general/"
             }
           ]
         },

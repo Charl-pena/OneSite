@@ -19,22 +19,16 @@
       "IconClass": "fas fa-tools"
     },
     {
-      "Title": "Form",
-      "Subtitle": "The indispensable form controls, designed for maximum clarity",
-      "Href": "documentation/form/",
-      "IconClass": "fab fa-wpforms"
-    },
-    {
-      "Title": "Elements",
-      "Subtitle": "Essential interface elements that only require a single CSS class",
-      "Href": "documentation/elements/",
-      "IconClass": "fas fa-cube"
-    },
-    {
       "Title": "Helpers",
       "Subtitle": "Change the color of the text and/or background",
       "Href": "documentation/helpers/",
       "IconClass": "fas fa-medkit"
+    },
+    {
+      "Title": "Components",
+      "Subtitle": "Advanced multi-part components with lots of possibilities",
+      "Href": "documentation/components/",
+      "IconClass": "fas fa-cubes"
     },
     {
       "Title": "Layout",
@@ -43,10 +37,16 @@
       "IconClass": "fas fa-warehouse"
     },
     {
-      "Title": "Components",
-      "Subtitle": "Advanced multi-part components with lots of possibilities",
-      "Href": "documentation/components/",
-      "IconClass": "fas fa-cubes"
+      "Title": "Elements",
+      "Subtitle": "Essential interface elements that only require a single CSS class",
+      "Href": "documentation/elements/",
+      "IconClass": "fas fa-cube"
+    },
+    {
+      "Title": "Form",
+      "Subtitle": "The indispensable form controls, designed for maximum clarity",
+      "Href": "documentation/form/",
+      "IconClass": "fab fa-wpforms"
     },
     {
       "Title": "Columns",
