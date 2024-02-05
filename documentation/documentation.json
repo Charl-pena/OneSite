@@ -19,22 +19,10 @@
       "IconClass": "fas fa-tools"
     },
     {
-      "Title": "Helpers",
-      "Subtitle": "Change the color of the text and/or background",
-      "Href": "documentation/helpers/",
-      "IconClass": "fas fa-medkit"
-    },
-    {
-      "Title": "Components",
-      "Subtitle": "Advanced multi-part components with lots of possibilities",
-      "Href": "documentation/components/",
-      "IconClass": "fas fa-cubes"
-    },
-    {
-      "Title": "Layout",
+      "Title": "Form",
       "Subtitle": "The indispensable form controls, designed for maximum clarity",
-      "Href": "documentation/layout/",
-      "IconClass": "fas fa-warehouse"
+      "Href": "documentation/form/",
+      "IconClass": "fab fa-wpforms"
     },
     {
       "Title": "Elements",
@@ -43,10 +31,22 @@
       "IconClass": "fas fa-cube"
     },
     {
-      "Title": "Form",
+      "Title": "Helpers",
+      "Subtitle": "Change the color of the text and/or background",
+      "Href": "documentation/helpers/",
+      "IconClass": "fas fa-medkit"
+    },
+    {
+      "Title": "Layout",
       "Subtitle": "The indispensable form controls, designed for maximum clarity",
-      "Href": "documentation/form/",
-      "IconClass": "fab fa-wpforms"
+      "Href": "documentation/layout/",
+      "IconClass": "fas fa-warehouse"
+    },
+    {
+      "Title": "Components",
+      "Subtitle": "Advanced multi-part components with lots of possibilities",
+      "Href": "documentation/components/",
+      "IconClass": "fas fa-cubes"
     },
     {
       "Title": "Columns",

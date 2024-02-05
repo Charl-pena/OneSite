@@ -2,23 +2,6 @@
   "Logo": "https://i.imgur.com/cxNWOuc.png",
   "NavSections": [
     {
-      "NameSection": "navbar-end",
-      "MenuItems": [
-        {
-          "Href": "https://www.linkedin.com/in/charl-pe%C3%B1a/",
-          "Title": null,
-          "Subtitle": null,
-          "IconClass": "fab fa-lg fa-linkedin"
-        },
-        {
-          "Href": "https://github.com/Charl-pena",
-          "Title": null,
-          "Subtitle": null,
-          "IconClass": "fab fa-lg fa-github-alt"
-        }
-      ]
-    },
-    {
       "NameSection": "navbar-start",
       "MenuItems": [
         {
@@ -28,10 +11,10 @@
           "IconClass": "fas fa-book"
         },
         {
-          "Href": "videos/",
-          "Title": "Videos",
-          "Subtitle": "Official Bulma Guides",
-          "IconClass": "fas fa-play-circle"
+          "Href": "dom/",
+          "Title": "Igl\u00fc",
+          "Subtitle": "El inicio nuevamente :)",
+          "IconClass": "fas fa-igloo"
         },
         {
           "Href": "expo/",
@@ -44,6 +27,23 @@
           "Title": "Pax",
           "Subtitle": "Official Bulma Pax",
           "IconClass": "fas fa-peace"
+        }
+      ]
+    },
+    {
+      "NameSection": "navbar-end",
+      "MenuItems": [
+        {
+          "Href": "https://github.com/Charl-pena",
+          "Title": null,
+          "Subtitle": null,
+          "IconClass": "fab fa-lg fa-github-alt"
+        },
+        {
+          "Href": "https://www.linkedin.com/in/charl-pe%C3%B1a/",
+          "Title": null,
+          "Subtitle": null,
+          "IconClass": "fab fa-lg fa-linkedin"
         }
       ]
     }
