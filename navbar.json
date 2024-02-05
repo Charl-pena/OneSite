@@ -6,7 +6,7 @@
       "MenuItems": [
         {
           "Href": "documentation/",
-          "Title": "Documentation",
+          "Title": "Contenido",
           "Subtitle": null,
           "IconClass": "fas fa-book"
         },
