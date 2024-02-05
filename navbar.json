@@ -38,6 +38,12 @@
           "Title": null,
           "Subtitle": null,
           "IconClass": "fab fa-lg fa-github-alt"
+        },
+        {
+          "Href": "https://www.linkedin.com/in/charl-pe%C3%B1a/",
+          "Title": null,
+          "Subtitle": null,
+          "IconClass": "fab fa-lg fa-linkedin"
         }
       ]
     }
