@@ -80,18 +80,16 @@ def generar_json(carpeta_a_trabajar, archivo_json_a_crear):
    nav_section = {}
    nav_sections = []
    flag_first_time = True
-
+   
    for root, dirs, files in os.walk(carpeta_a_trabajar):
+      
       if root == carpeta_a_trabajar:
          archivo = files[0]
          if ".txt" in archivo:
             logo = extraer_logo(os.path.join(root, archivo))
       else:
-         # print(root)
          lista_ordenada = sorted(files, key=lambda x: extract_number_from_filename(x))
-         # print(lista_ordenada)
          for archivo in lista_ordenada:
-            # print(f"huevos {sectionName} JAJAJA {os.path.basename(root)}")
             if sectionName != os.path.basename(root):
                sectionName = os.path.basename(root) 
                

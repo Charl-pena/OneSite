@@ -60,7 +60,7 @@ def procesar_archivo_html(ruta_html):
     # Construye la ruta completa al archivo JSON
 
     file_name_minuscula = os.path.basename(ruta_html).replace('.html', '.json')
-    file_name_minuscula = file_name_minuscula[0].lower() + file_name_minuscula[1:]
+    file_name_minuscula = file_name_minuscula.lower()
 
 
     ruta_json = os.path.join(os.path.dirname(ruta_html), file_name_minuscula)
