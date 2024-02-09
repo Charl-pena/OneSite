@@ -1,121 +1,39 @@
 {
   "MenuSections": [
     {
-      "NameSection": "Guides",
+      "NameSection": "Programaci\u00f3n",
       "MenuItems": [
         {
-          "Title": "Overview",
-          "Href": "documentation/overview/",
-          "IconClass": "fas fa-eye",
+          "Title": "Conceptos clave",
+          "Href": "documentation/conceptos clave/",
+          "IconClass": "mdi mdi-key-alert",
           "SubMenus": [
             {
-              "Title": "Start",
-              "Href": "documentation/overview/articles/start/"
+              "Title": "Fundamentos",
+              "Href": "documentation/conceptos clave/articles/fundamentos/"
             },
             {
-              "Title": "Css classes",
-              "Href": "documentation/overview/articles/css classes/"
-            }
-          ]
-        },
-        {
-          "Title": "Customize",
-          "Href": "documentation/customize/",
-          "IconClass": "fas fa-paint-brush",
-          "SubMenus": [
-            {
-              "Title": "Concepts",
-              "Href": "documentation/customize/articles/concepts/"
-            }
-          ]
-        },
-        {
-          "Title": "Utilities",
-          "Href": "documentation/utilities/",
-          "IconClass": "fas fa-tools",
-          "SubMenus": [
-            {
-              "Title": "Mixins",
-              "Href": "documentation/utilities/articles/mixins/"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "NameSection": "CSS Library",
-      "MenuItems": [
-        {
-          "Title": "Form",
-          "Href": "documentation/form/",
-          "IconClass": "fab fa-wpforms",
-          "SubMenus": [
-            {
-              "Title": "General",
-              "Href": "documentation/form/articles/general/"
-            }
-          ]
-        },
-        {
-          "Title": "Elements",
-          "Href": "documentation/elements/",
-          "IconClass": "fas fa-cube",
-          "SubMenus": [
-            {
-              "Title": "Block",
-              "Href": "documentation/elements/articles/block/"
-            }
-          ]
-        },
-        {
-          "Title": "Helpers",
-          "Href": "documentation/helpers/",
-          "IconClass": "fas fa-medkit",
-          "SubMenus": [
-            {
-              "Title": "Color",
-              "Href": "documentation/helpers/articles/color/"
-            }
-          ]
-        },
-        {
-          "Title": "Layout",
-          "Href": "documentation/layout/",
-          "IconClass": "fas fa-warehouse",
-          "SubMenus": [
-            {
-              "Title": "Level",
-              "Href": "documentation/layout/articles/level/"
+              "Title": "Campos",
+              "Href": "documentation/conceptos clave/articles/campos/"
             },
             {
-              "Title": "Container",
-              "Href": "documentation/layout/articles/container/"
-            }
-          ]
-        },
-        {
-          "Title": "Components",
-          "Href": "documentation/components/",
-          "IconClass": "fas fa-cubes",
-          "SubMenus": [
-            {
-              "Title": "Breadcrumb",
-              "Href": "documentation/components/articles/breadcrumb/"
-            }
-          ]
-        },
-        {
-          "Title": "Columns",
-          "Href": "documentation/columns/",
-          "IconClass": "fas fa-columns",
-          "SubMenus": [
-            {
-              "Title": "Basics",
-              "Href": "documentation/columns/articles/basics/"
+              "Title": "Lenguajes",
+              "Href": "documentation/conceptos clave/articles/lenguajes/"
             },
             {
-              "Title": "Sizes",
-              "Href": "documentation/columns/articles/sizes/"
+              "Title": "Tiempos modernos",
+              "Href": "documentation/conceptos clave/articles/tiempos modernos/"
+            }
+          ]
+        },
+        {
+          "Title": "C-sharp",
+          "Href": "documentation/c-sharp/",
+          "IconClass": "mdi mdi-language-csharp",
+          "SubMenus": [
+            {
+              "Title": "Lo fundamental",
+              "Href": "documentation/c-sharp/articles/lo fundamental/"
             }
           ]
         }
