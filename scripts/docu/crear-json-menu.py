@@ -61,6 +61,7 @@ def generate_menu_json(root_path, carpeta_a_crear):
                         submenu_path = os.path.join(item_path, submenu_name)
                         if ".json" in submenu_name:
                             iconClass = extraer_info_json(submenu_path, "IconClass") 
+                            svg = extraer_info_json(submenu_path, "SVG") 
                             actualSubtitle = extraer_info_json(submenu_path, "Subtitle") 
                             # print(submenu_name)
                         if os.path.isdir(submenu_path):
@@ -79,7 +80,7 @@ def generate_menu_json(root_path, carpeta_a_crear):
                                         article = {"Title": article_title.capitalize(), "Href": article_href}
                                         submenu_items.append(article)
                     
-                    menu_item = {"Title": item_name.capitalize(), "Subtitle" : actualSubtitle, "Href": f"{base_folder}{item_name.lower()}/", "IconClass" : iconClass, "SubMenus": submenu_items}
+                    menu_item = {"Title": item_name.capitalize(), "Subtitle" : actualSubtitle, "Href": f"{base_folder}{item_name.lower()}/", "IconClass" : iconClass, "SVG" : svg , "SubMenus": submenu_items}
                     menu_section["MenuItems"].append(menu_item)
 
             menu_sections.append(menu_section)
