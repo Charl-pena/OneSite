@@ -109,7 +109,7 @@ def procesar_json(json_path, carpeta_a_crear):
 
     section = {
         "Href": base_folder + ultimos_tres_elementos.replace('.json', ''),
-        "IconClass": data.get("Icon", ""),
+        "IconClass": data.get("IconClass", ""),
         "SVG": data.get("SVG", ""),
         "Title": title,
         "Subtitle": data.get("Subtitle", "")
