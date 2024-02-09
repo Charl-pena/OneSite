@@ -17,6 +17,12 @@ def procesar_archivo_html(ruta_html,flag_html_content = True):
         icon = soup.icon.text.strip()
     else:
         icon = None  # Otra acción que desees realizar en caso de que no exista 'icon'
+    
+    svg = soup.find('svg', id='null53')
+    if svg:
+        svg = str(svg)
+    else:
+        svg = None
 
     # Verificar si existe el elemento 'title'
     if hasattr(soup, 'title') and soup.title:
@@ -45,7 +51,8 @@ def procesar_archivo_html(ruta_html,flag_html_content = True):
         result_dict = {
             'Title': title,
             'Subtitle': subtitle,
-            'Icon': icon,
+            'IconClass': icon,
+            'SVG': svg,
             'HTMLContent': html_content,
         }
     else:
@@ -53,7 +60,8 @@ def procesar_archivo_html(ruta_html,flag_html_content = True):
         result_dict = {
             'Title': title,
             'Subtitle': subtitle,
-            'Icon': icon,
+            'IconClass': icon,
+            'SVG': svg,
         }
 
     # Convierte el diccionario a formato JSON
