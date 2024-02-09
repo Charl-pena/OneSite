@@ -4,25 +4,25 @@
   "Subtitle": "Art\u00edculos sobre temas clave para entender la programaci\u00f3n.",
   "Sections": [
     {
-      "Href": "documentation/Conceptos Clave/articles/Fundamentos",
+      "Href": "documentation/Conceptos Clave/articles/fundamentos",
       "IconClass": "mdi mdi-dot-net",
       "Title": "Fundamentos",
       "Subtitle": "Lo que es necesario saber si se quiere programar en C#."
     },
     {
-      "Href": "documentation/Conceptos Clave/articles/Campos",
+      "Href": "documentation/Conceptos Clave/articles/campos",
       "IconClass": "fas fa-columns",
       "Title": "Campos",
       "Subtitle": "A simple way to build responsive columns"
     },
     {
-      "Href": "documentation/Conceptos Clave/articles/Lenguajes",
+      "Href": "documentation/Conceptos Clave/articles/lenguajes",
       "IconClass": "fas fa-columns",
       "Title": "Lenguajes",
       "Subtitle": "A simple way to build responsive columns"
     },
     {
-      "Href": "documentation/Conceptos Clave/articles/Tiempos Modernos",
+      "Href": "documentation/Conceptos Clave/articles/tiempos modernos",
       "IconClass": "fas fa-columns",
       "Title": "Tiempos modernos",
       "Subtitle": "A simple way to build responsive columns"

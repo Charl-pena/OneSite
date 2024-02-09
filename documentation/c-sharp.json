@@ -4,7 +4,7 @@
   "Subtitle": "Art\u00edculos para los interesados en C# y el ecosistema .NET",
   "Sections": [
     {
-      "Href": "documentation/C-Sharp/articles/Lo Fundamental",
+      "Href": "documentation/C-Sharp/articles/lo fundamental",
       "IconClass": "mdi mdi-dot-net",
       "Title": "Lo fundamental",
       "Subtitle": "Lo que es necesario saber si se quiere programar en C#."
