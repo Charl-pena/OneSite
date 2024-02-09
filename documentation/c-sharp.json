@@ -1,11 +1,12 @@
 {
   "IconClass": "mdi mdi-language-csharp",
+  "SVG": null,
   "Title": "C-sharp",
   "Subtitle": "Art\u00edculos para los interesados en C# y el ecosistema .NET",
   "Sections": [
     {
       "Href": "documentation/C-Sharp/articles/lo fundamental",
-      "IconClass": "mdi mdi-dot-net",
+      "IconClass": "",
       "Title": "Lo fundamental",
       "Subtitle": "Lo que es necesario saber si se quiere programar en C#."
     }
