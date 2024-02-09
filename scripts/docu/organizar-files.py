@@ -72,6 +72,15 @@ def delete_prefix_folders(directorio):
                     os.rename(ruta_origen, nueva_ruta)
                     print(f"Carpeta Renombrada: {nombre} -> {nuevo_nombre}")
 
+def convertir_a_minusculas(ruta):
+    if os.path.isdir(ruta):
+        # # Si es un directorio, convierte su nombre a minúsculas y procesa los archivos dentro
+        nuevo_nombre = ruta.lower()
+        os.rename(ruta, nuevo_nombre)
+        # Recorre las carpetas dentro del directorio
+        for nombre_archivo in os.listdir(nuevo_nombre):
+            ruta_completa = os.path.join(nuevo_nombre, nombre_archivo)
+            convertir_a_minusculas(ruta_completa)
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -93,5 +102,6 @@ if __name__ == "__main__":
             shutil.rmtree(carpeta_a_crear)
         copiar_contenidos(carpeta_a_trabajar, carpeta_a_crear, folders_with_articles, original_folder_paths)
         delete_prefix_folders(carpeta_a_crear)
+        convertir_a_minusculas(carpeta_a_crear)
     else:
         print("No se encontraron carpetas con subcarpeta 'articles'.")
