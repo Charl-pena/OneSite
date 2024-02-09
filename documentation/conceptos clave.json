@@ -6,28 +6,28 @@
   "Sections": [
     {
       "Href": "documentation/Conceptos Clave/articles/fundamentos",
-      "IconClass": "",
+      "IconClass": "fas fa-flag",
       "SVG": null,
       "Title": "Fundamentos",
       "Subtitle": "Lo que es necesario saber si se quiere programar en C#."
     },
     {
       "Href": "documentation/Conceptos Clave/articles/campos",
-      "IconClass": "",
+      "IconClass": "fas fa-columns",
       "SVG": null,
       "Title": "Campos",
       "Subtitle": "A simple way to build responsive columns"
     },
     {
       "Href": "documentation/Conceptos Clave/articles/lenguajes",
-      "IconClass": "",
+      "IconClass": "fas fa-columns",
       "SVG": null,
       "Title": "Lenguajes",
       "Subtitle": "A simple way to build responsive columns"
     },
     {
       "Href": "documentation/Conceptos Clave/articles/tiempos modernos",
-      "IconClass": "",
+      "IconClass": "fas fa-columns",
       "SVG": null,
       "Title": "Tiempos modernos",
       "Subtitle": "A simple way to build responsive columns"
