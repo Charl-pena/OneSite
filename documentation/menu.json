@@ -6,7 +6,7 @@
         {
           "Title": "Conceptos clave",
           "Href": "documentation/conceptos clave/",
-          "IconClass": "mdi mdi-key-alert",
+          "IconClass": "fas fa-arrows-to-circle",
           "SubMenus": [
             {
               "Title": "Fundamentos",
@@ -29,7 +29,7 @@
         {
           "Title": "C-sharp",
           "Href": "documentation/c-sharp/",
-          "IconClass": "mdi mdi-language-csharp",
+          "IconClass": null,
           "SubMenus": [
             {
               "Title": "Lo fundamental",

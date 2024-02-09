@@ -6,13 +6,13 @@
       "Title": "Conceptos clave",
       "Subtitle": "Art\u00edculos sobre temas clave para entender la programaci\u00f3n.",
       "Href": "documentation/conceptos clave/",
-      "IconClass": "mdi mdi-key-alert"
+      "IconClass": "fas fa-arrows-to-circle"
     },
     {
       "Title": "C-sharp",
       "Subtitle": "Art\u00edculos para los interesados en C# y el ecosistema .NET",
       "Href": "documentation/c-sharp/",
-      "IconClass": "mdi mdi-language-csharp"
+      "IconClass": null
     }
   ]
 }

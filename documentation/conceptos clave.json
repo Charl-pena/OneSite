@@ -1,5 +1,5 @@
 {
-  "IconClass": "mdi mdi-key-alert",
+  "IconClass": "fas fa-arrows-to-circle",
   "SVG": null,
   "Title": "Conceptos clave",
   "Subtitle": "Art\u00edculos sobre temas clave para entender la programaci\u00f3n.",
@@ -7,24 +7,28 @@
     {
       "Href": "documentation/Conceptos Clave/articles/fundamentos",
       "IconClass": "",
+      "SVG": null,
       "Title": "Fundamentos",
       "Subtitle": "Lo que es necesario saber si se quiere programar en C#."
     },
     {
       "Href": "documentation/Conceptos Clave/articles/campos",
       "IconClass": "",
+      "SVG": null,
       "Title": "Campos",
       "Subtitle": "A simple way to build responsive columns"
     },
     {
       "Href": "documentation/Conceptos Clave/articles/lenguajes",
       "IconClass": "",
+      "SVG": null,
       "Title": "Lenguajes",
       "Subtitle": "A simple way to build responsive columns"
     },
     {
       "Href": "documentation/Conceptos Clave/articles/tiempos modernos",
       "IconClass": "",
+      "SVG": null,
       "Title": "Tiempos modernos",
       "Subtitle": "A simple way to build responsive columns"
     }
