@@ -32,12 +32,6 @@
           "Title": "Domus",
           "Subtitle": "El inicio nuevamente :)",
           "IconClass": "fas fa-igloo"
-        },
-        {
-          "Href": "contacto/",
-          "Title": "Contacto",
-          "Subtitle": "Contacto Dummy",
-          "IconClass": "fas fa-heart"
         }
       ]
     }
