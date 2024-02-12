@@ -1,0 +1,13 @@
+{
+  "Title": "Contenido",
+  "Subtitle": "Bueno, aqu\u00ed se encuentra el contenido que he escrito; digamos, algunos art\u00edculos sobre ciertos temas. \n   Si es de tu inter\u00e9s, te invito a leerlos.",
+  "Sections": [
+    {
+      "Title": "Notas",
+      "Subtitle": "Breves comentarios del autor.",
+      "Href": "documentation/notas/",
+      "IconClass": "fas fa-note-sticky",
+      "SVG": null
+    }
+  ]
+}

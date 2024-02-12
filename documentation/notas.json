@@ -1,0 +1,15 @@
+{
+  "IconClass": "fas fa-note-sticky",
+  "SVG": null,
+  "Title": "Notas",
+  "Subtitle": "Breves comentarios del autor.",
+  "Sections": [
+    {
+      "Href": "documentation/Notas/articles/mensaje",
+      "IconClass": "fab fa-linux",
+      "SVG": null,
+      "Title": "Mensaje",
+      "Subtitle": "Mensaje Del Autor."
+    }
+  ]
+}

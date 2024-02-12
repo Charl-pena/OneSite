@@ -1,0 +1,21 @@
+{
+  "MenuSections": [
+    {
+      "NameSection": "Miscel\u00e1nea",
+      "MenuItems": [
+        {
+          "Title": "Notas",
+          "Href": "documentation/notas/",
+          "IconClass": "fas fa-note-sticky",
+          "SVG": null,
+          "SubMenus": [
+            {
+              "Title": "Mensaje",
+              "Href": "documentation/notas/articles/mensaje/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
