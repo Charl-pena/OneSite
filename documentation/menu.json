@@ -6,7 +6,7 @@
         {
           "Title": "Notas",
           "Href": "documentation/notas/",
-          "IconClass": "fas fa-note-sticky",
+          "IconClass": "fas fa-clipboard",
           "SVG": null,
           "SubMenus": [
             {
